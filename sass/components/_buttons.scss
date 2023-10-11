@@ -1,0 +1,36 @@
+.btn {
+  cursor: pointer;
+  padding: 12px 28px;
+  color: $white;
+  font-size: 14px;
+  font-weight: 600;
+  background-color: $accent;
+  border: none;
+  border-radius: 100px;
+
+  @media screen and (min-width: 768px) {
+    padding: 14px 40px;
+    font-size: 18px;
+  }
+
+  &:hover,
+  &:focus,
+  &:focus-visible,
+  &:focus-within {
+    color: $accent;
+    background-color: $bg-accent;
+  }
+
+  &--transparent {
+    background-color: transparent;
+    border: 1px solid $white;
+    &:hover,
+    &:focus,
+    &:focus-visible,
+    &:focus-within {
+      color: $accent;
+      border-color: $accent;
+      background-color: transparent;
+    }
+  }
+}
