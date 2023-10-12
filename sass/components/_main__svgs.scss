@@ -1,0 +1,31 @@
+* {
+  list-style: none;
+}
+
+.bubble {
+  background-color: rgba(30, 24, 35, 1);
+  width: 32px;
+  height: 32px;
+  border-bottom: 50px;
+  border-radius: 50%;
+  border-color: rgba(255, 255, 255, 0.5);
+  border: 1px solid;
+}
+
+.cocoa {
+  fill: rgba(253, 146, 34, 1);
+  margin-left: 8px;
+  transform: translateY(28%);
+}
+
+.dollar {
+  fill: rgba(253, 146, 34, 1);
+  margin-left: 7px;
+  transform: translateY(-34%);
+}
+
+.spoon {
+  fill: rgba(253, 146, 34, 1);
+  margin-left: 8px;
+  transform: translateY(-35%);
+}
