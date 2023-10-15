@@ -7,7 +7,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./sass/main.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
     <title>SIMPLY CHOCOLATE - Welcome</title>
   </head>
   <body>
@@ -371,61 +371,7 @@
         </div>
       </div>
     </div>
-    <div class="location-modal backdrop is-hidden" data-modal-buy>
-      <div class="modal">
-        <div class="modal__header header--subscribe">
-          <button class="btn--close-modal btn--subs-modal-close btn" data-modal-buy-close>
-            <svg class="svg-close-modal">
-              <use href="./images/symbol-defs.svg#icon-x-close"></use>
-            </svg>
-          </button>
-        </div>
-        <div class="modal__main--subs">
-          <h3 class="modal__title"><span class="main__title">BUY</span> NOW</h3>
-          <form name="review-form">
-            <fieldset class="review">
-              <input
-                class="review-form__input"
-                type="text"
-                name="name"
-                id="name"
-                placeholder="Name"
-              />
-              <input
-                class="review-form__input"
-                type="email"
-                name="email-modal"
-                id="email-modal"
-                placeholder="Email"
-              />
-              <label for="phone" class="review__label-phone">
-                <div class="phone__svg-id">
-                  <svg class="review-form__svg">
-                    <use href="images/symbol-defs.svg#icon-flag"></use>
-                  </svg>
-                  +380
-                </div>
-                <input
-                  class="review-form__input input--phone"
-                  type="tel"
-                  name="phone"
-                  id="phone"
-                  placeholder="Phone Number"
-                />
-              </label>
-              <textarea
-                class="review-form__input input--textarea"
-                rows="5"
-                type="text"
-                name="comment"
-                id="comment"
-                placeholder="Enter text"
-              ></textarea>
-              <button type="submit" class="btn btn--modal-form">Send</button>
-            </fieldset>
-        </div>
-      </div>
-    </div>
+
     <script src="../js/modal.js"></script>
     <script src="../js/subs.modal.js"></script>
     <script src="../js/buy.modal.js"></script>
