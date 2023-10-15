@@ -33,4 +33,28 @@
       background-color: transparent;
     }
   }
+
+  &--close-modal {
+    background-color: transparent;
+    &:hover,
+    &:focus,
+    &:focus-visible,
+    &:focus-within {
+      color: $white;
+      border-color: $white;
+      background-color: transparent;
+    }
+  }
+  &--subs-modal {
+    position: absolute;
+    padding: 18px 28px;
+    left: 162px;
+    @media screen and (min-width: 768px) {
+      position: static;
+    }
+  }
+  &--subs-modal-close {
+    position: absolute;
+    top: 0px;
+  }
 }
