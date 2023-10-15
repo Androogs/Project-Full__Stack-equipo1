@@ -193,42 +193,57 @@
         </ul>
       </section>
 
-
-
       <section class="sellers">
         <div class="sellers__div1">
-        <h3 class="sellers__title">TOP <span class="sellers__title--black">SELLERS</span></h3>
-        <ul class="sellers__list">
-          <li class="sellers__item">
-            <img src="./images/sellers1.jpg" width="335" height="464" alt="tarjeta sellers 1" 
-            class="sellers__img"/>
-            <p class="sellers__text text1">
-              Crazy enough chocolate originates from a bean just like the coffee bean called Cacao. Cacao has been around for thousands of years and was first discovered by the Native American tribe called the Mayans.
-            </p>
-          </li>
-          
-          <li class="sellers__item">
-            <img src="./images/sellers2.jpg" width="335" height="464" alt="tarjeta sellers 3" 
-            class="sellers__img"/>
-          </li>
-          <li class="sellers__item">
-            <img src="./images/sellers3.jpg" width="335" height="464" alt="tarjeta sellers 3" 
-            class="sellers__img img"/>
-          </li>
-        </ul>
-      </div>
+          <h3 class="sellers__title">TOP <span class="sellers__title--black">SELLERS</span></h3>
+          <ul class="sellers__list">
+            <li class="sellers__item">
+              <img
+                src="./images/sellers1.jpg"
+                width="335"
+                height="464"
+                alt="tarjeta sellers 1"
+                class="sellers__img"
+              />
+              <p class="sellers__text text1">
+                Crazy enough chocolate originates from a bean just like the coffee bean called
+                Cacao. Cacao has been around for thousands of years and was first discovered by the
+                Native American tribe called the Mayans.
+              </p>
+            </li>
 
-        <div class="sellers__div2">           
-            <p class="sellers__text text2">
-              Crazy enough chocolate originates from a bean just like the coffee bean called Cacao. Cacao has been around for thousands of years and was first discovered by the Native American tribe called the Mayans.
-            </p>
-            <div class="sellers__div-btn">       
-            <button type="button" class="btn">Buy now</button>
-          </div> 
-          </div> 
+            <li class="sellers__item">
+              <img
+                src="./images/sellers2.jpg"
+                width="335"
+                height="464"
+                alt="tarjeta sellers 3"
+                class="sellers__img"
+              />
+            </li>
+            <li class="sellers__item">
+              <img
+                src="./images/sellers3.jpg"
+                width="335"
+                height="464"
+                alt="tarjeta sellers 3"
+                class="sellers__img img"
+              />
+            </li>
+          </ul>
+        </div>
+
+        <div class="sellers__div2">
+          <p class="sellers__text text2">
+            Crazy enough chocolate originates from a bean just like the coffee bean called Cacao.
+            Cacao has been around for thousands of years and was first discovered by the Native
+            American tribe called the Mayans.
+          </p>
+          <div class="sellers__div-btn">
+            <button type="button" class="btn" data-modal-buy-open>Buy now</button>
+          </div>
+        </div>
       </section>
-
-
 
       <section>
         <h3>CHOCOLATE IS LOVED</h3>
@@ -287,6 +302,7 @@
             </li>
           </ul>
         </li>
+      </ul>
       <ul class="menu">
         <li class="menu__link">Home</li>
         <li class="menu__link">How it's made</li>
@@ -383,49 +399,109 @@
       </div>
     </div>
     <div class="location-modal backdrop is-hidden" data-modal-buy>
-      <div class="modal">
-        <div class="modal__header header--subscribe">
-          <button class="btn--close-modal btn--subs-modal-close btn" data-modal-buy-close>
+      <div class="modal buy-modal">
+        <div class="modal__header">
+          <button class="btn--close-modal btn" data-modal-buy-close>
             <svg class="svg-close-modal">
               <use href="./images/symbol-defs.svg#icon-x-close"></use>
             </svg>
           </button>
         </div>
-        <div class="modal__main--subs">
-          <h3 class="modal__title"><span class="main__title">BUY</span> NOW</h3>
-          <form name="review-form">
+        <div class="modal__main">
+          <h3 class="modal__title modal__title--buy"><span class="main__title">BUY </span>NOW!</h3>
+          <ul class="list-products">
+            <li class="product-card">
+              <img
+                class="product-card__image"
+                width="84"
+                src="./images/kinder-bar.jpg"
+                alt="kinderbar"
+              />
+              <p class="product-card__qty">100 g</p>
+            </li>
+            <li class="product-card">
+              <img
+                class="product-card__image"
+                src="./images/chocolate-krispy.jpg"
+                width="84"
+                alt="krispy chocolate"
+              />
+              <p class="product-card__qty">200 g</p>
+            </li>
+            <li class="product-card">
+              <img
+                class="product-card__image"
+                src="./images/choc-bar-dark.jpg"
+                width="84"
+                alt="chocolate dark bar"
+              />
+              <p class="product-card__qty">300 g</p>
+            </li>
+          </ul>
+          <form name="buy-form">
             <fieldset class="review">
-              <input
-                class="review-form__input"
-                type="text"
-                name="name"
-                id="name"
-                placeholder="Name"
-              />
-              <input
-                class="review-form__input"
-                type="email"
-                name="email-modal"
-                id="email-modal"
-                placeholder="Email"
-              />
+              <p>Personal Information</p>
+              <div class="personal-info">
+                <input
+                  class="review-form__input input-name"
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Name"
+                />
+                <input
+                  class="review-form__input input-surname"
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Surname"
+                />
+              </div>
+              <label for="email">
+                <p>Email</p>
+                <input
+                  class="review-form__input review-form__input-buy"
+                  type="email"
+                  name="email-modal"
+                  id="email-modal"
+                  placeholder="Email"
+                />
+              </label>
               <label for="phone" class="review__label-phone">
-                <div class="phone__svg-id">
+                <p>Phone Number</p>
+                <div class="phone__svg-id svg--buy">
                   <svg class="review-form__svg">
                     <use href="images/symbol-defs.svg#icon-flag"></use>
                   </svg>
                   +380
                 </div>
                 <input
-                  class="review-form__input input--phone"
+                  class="review-form__input input--phone input--phone-buy"
                   type="tel"
                   name="phone"
                   id="phone"
                   placeholder="Phone Number"
                 />
               </label>
+              <label for="card" class="review__label-phone">
+                <p>Card Number</p>
+                <div class="svg--buy card-logo">
+                  <svg class="review-form__svg">
+                    <use href="images/symbol-defs.svg#icon-Mastercard"></use>
+                  </svg>
+                </div>
+                <input
+                  class="review-form__input review-form__input-buy"
+                  type="text"
+                  inputmode="numeric"
+                  name="card"
+                  id="card"
+                  placeholder="Enter Card"
+                />
+              </label>
+              <p>Comment</p>
               <textarea
-                class="review-form__input input--textarea"
+                class="review-form__input input--textarea review-form__input-buy"
                 rows="5"
                 type="text"
                 name="comment"
@@ -434,6 +510,7 @@
               ></textarea>
               <button type="submit" class="btn btn--modal-form">Send</button>
             </fieldset>
+          </form>
         </div>
       </div>
     </div>
