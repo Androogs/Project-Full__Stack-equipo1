@@ -7,7 +7,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./sass/main.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
     <title>SIMPLY CHOCOLATE - Welcome</title>
   </head>
   <body>
@@ -32,7 +32,7 @@
         <h1>
           Treat yourself or a loved one to our finest ingredients for a moment of pure delight!
         </h1>
-        <button type="button" class="btn">Buy now</button>
+        <button type="button" class="btn" data-modal-buy-open>Buy now</button>
         <button type="button" class="btn btn--transparent">How it's made</button>
         <p>scroll down</p>
       </section>
@@ -139,64 +139,66 @@
           </li>
         </ul>
       </section>
-      <section>
-        <h3>OUR PRODUCTS</h3>
-        <ul>
-          <li>
-            <img src="./images/orange.jpg" width="230" height="201" alt="tarjeta orange" />
-            <h3>ORANGE</h3>
-            <p>Dark chocolate</p>
-            <p>45 UAH</p>
-          </li>
-          <li>
-            <img src="./images/appleandcranberry.jpg" width="230" height="201" alt="" />
-            <h3>APPLE&CRANBERRY</h3>
-            <p>Milk chocolate</p>
-            <p>50 UAH</p>
-          </li>
-          <li>
-            <img src="./images/limeseasalt.jpg" width="230" height="201" alt="" />
-            <h3>lIME&SEA SALT</h3>
-            <p>Dark chocolate</p>
-            <p>54 UAH</p>
-          </li>
-          <li>
-            <img src="./images/pineapple.jpg" width="230" height="201" alt="" />
-            <h3>PINEAPPLE</h3>
-            <p>Dark chocolate</p>
-            <p>54 UAH</p>
-          </li>
-          <li>
-            <img src="./images/classic.jpg" width="230" height="201" alt="" />
-            <h3>CLASSIC</h3>
-            <p>Milk chocolate</p>
-            <p>45 UAH</p>
-          </li>
-          <li>
-            <img src="./images/honey.jpg" width="230" height="201" alt="" />
-            <h3>HONEY</h3>
-            <p>Milk chocolate</p>
-            <p>50 UAH</p>
-          </li>
-          <li>
-            <img src="./images/Roastedfruits.jpg" width="230" height="201" alt="" />
-            <h3>ROASTED FRUITS</h3>
-            <p>Dark chocolate</p>
-            <p>66 UAH</p>
-          </li>
-          <li>
-            <img src="./images/classicwhite.jpg" width="230" height="201" alt="" />
-            <h3>CLASSIC</h3>
-            <p>White chocolate</p>
-            <p>54 UAH</p>
-          </li>
-        </ul>
+      <section class="products">
+        <div class="container">
+          <h3>OUR PRODUCTS</h3>
+          <ul class="products-list list">
+            <li class="products__item item">
+              <img src="./images/orange.jpg" width="230" height="201" alt="orange" />
+              <h3 class="item__name">ORANGE</h3>
+              <p class="item__type">Dark chocolate</p>
+              <p class="item__price">45 UAH</p>
+            </li>
+            <li class="products__item">
+              <img src="./images/appleandcranberry.jpg" width="230" height="201" alt="apple-cranberry" />
+              <h3 class="item__name">APPLE&CRANBERRY</h3>
+              <p class="item__type">Milk chocolate</p>
+              <p class="item__price">50 UAH</p>
+            </li>
+            <li class="products__item">
+              <img src="./images/limeseasalt.jpg" width="230" height="201" alt="limesea-salt" />
+              <h3 class="item__name">lIME&SEA SALT</h3>
+              <p class="item__type">Dark chocolate</p>
+              <p class="item__price">54 UAH</p>
+            </li>
+            <li class="products__item">
+              <img src="./images/pineapple.jpg" width="230" height="201" alt="pineapple" />
+              <h3 class="item__name">PINEAPPLE</h3>
+              <p class="item__type">Dark chocolate</p>
+              <p class="item__price">54 UAH</p>
+            </li>
+            <li class="products__item">
+              <img src="./images/classic.jpg" width="230" height="201" alt="classic" />
+              <h3 class="item__name">CLASSIC</h3>
+              <p class="item__type">Milk chocolate</p>
+              <p class="item__price">45 UAH</p>
+            </li>
+            <li class="products__item">
+              <img src="./images/honey.jpg" width="230" height="201" alt="Honey" />
+              <h3 class="item__name">HONEY</h3>
+              <p class="item__type">Milk chocolate</p>
+              <p class="item__price">50 UAH</p>
+            </li>
+            <li class="products__item">
+              <img src="./images/Roastedfruits.jpg" width="230" height="201" alt="roasted-fruits" />
+              <h3 class="item__name">ROASTED FRUITS</h3>
+              <p class="item__type">Dark chocolate</p>
+              <p class="item__price">66 UAH</p>
+            </li>
+            <li class="products__item">
+              <img src="./images/classicwhite.jpg" width="230" height="201" alt="white-chocolate" />
+              <h3 class="item__name">CLASSIC</h3>
+              <p class="item__type">White chocolate</p>
+              <p class="item__price">54 UAH</p>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <section class="sellers">
         <div class="sellers__div1">
           <h3 class="sellers__title">TOP <span class="sellers__title--black">SELLERS</span></h3>
-          <ul class="sellers__list">
+          <ul class="list sellers__list">
             <li class="sellers__item">
               <img
                 src="./images/sellers1.jpg"
@@ -240,7 +242,7 @@
             American tribe called the Mayans.
           </p>
           <div class="sellers__div-btn">
-            <button type="button" class="btn" data-modal-buy-open>Buy now</button>
+            <button type="button" class="btn" data-modal-buy-open2>Buy now</button>
           </div>
         </div>
       </section>
@@ -372,7 +374,7 @@
       <div class="modal">
         <div class="modal__header header--subscribe">
           <img class="header__image" src="images/newchocolate.jpg" alt="" />
-          <button class="modal__btn  modal__btn--subs-modal-close" data-modal-subs-close>
+          <button class="modal__btn modal__btn--subs-modal-close" data-modal-subs-close>
             <svg class="svg-close-modal">
               <use href="./images/symbol-defs.svg#icon-x-close-white"></use>
             </svg>
@@ -380,7 +382,7 @@
         </div>
         <div class="modal__main--subs">
           <h3 class="modal__title modal__title--subs">
-            EXPLORE OUR<br><span class="main__title">NEW CHOCOLATE</span> FIRST!
+            EXPLORE OUR<br /><span class="main__title">NEW CHOCOLATE</span> FIRST!
           </h3>
           <form name="subscribe-form">
             <fieldset class="subscribe">
