@@ -4,9 +4,13 @@
 <path fill="#ffd700" style="fill: var(--color1, #ffd700)" d="M31.832 4.558h-31.589v23.508h31.589v-23.508z"></path>
 <path fill="#0057b7" style="fill: var(--color2, #0057b7)" d="M0.243 4.558h31.589v11.754h-31.589v-11.754z"></path>
 </symbol>
-<symbol id="icon-xclose" viewBox="0 0 32 32">
-<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.2857" d="M24 8l-16 16"></path>
-<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.2857" d="M8 8l16 16"></path>
+<symbol id="icon-x-close" viewBox="0 0 32 32">
+<path d="M21 7L7 21" stroke="#111111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M7 7L21 21" stroke="#111111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</symbol>
+<symbol id="icon-x-close-white" viewBox="0 0 32 32">
+<path d="M21 7L7 21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M7 7L21 21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </symbol>
 <symbol id="icon-Mastercard" viewBox="0 0 32 32">
 <path d="M16 22.834c-1.598 1.371-3.671 2.199-5.935 2.199-5.054 0-9.15-4.121-9.15-9.204s4.097-9.204 9.15-9.204c2.265 0 4.338 0.828 5.935 2.199 1.598-1.371 3.671-2.199 5.935-2.199 5.054 0 9.15 4.121 9.15 9.204s-4.097 9.204-9.15 9.204c-2.265 0-4.337-0.828-5.935-2.199z"></path>

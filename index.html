@@ -7,7 +7,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="stylesheet" href="./sass/main.css" />
     <title>SIMPLY CHOCOLATE - Welcome</title>
   </head>
   <body>
@@ -37,44 +37,61 @@
         <p>scroll down</p>
       </section>
       <section>
-        <li>
-          <li class="bubble">
-            <svg class="cocoa" width="28" height="28">
-              <use href="images/symbol-defs.svg#icon-cocoa">
-            </svg>
+        <ul>
+          <li>
+            <ul>
+              <li class="bubble">
+                <svg class="cocoa" width="28" height="28">
+                  <use href="images/symbol-defs.svg#icon-cocoa"></use>
+                </svg>
+              </li>
+            </ul>
+            <h3>Unsurpassed taste</h3>
+            <p>
+              Crafted with the finest quality cocoa beansand a dedication to perfection, each bite
+              is a decadent experience that simply cannot be matched. Savor the richness and
+              complexity of our Unsurpassed Taste and discover a new level of chocolate bliss.
+            </p>
           </li>
-          <h3>Unsurpassed taste</h3>
-          <p>
-            Crafted with the finest quality cocoa beansand a dedication to perfection, each bite is a decadent experience that simply cannot be matched. Savor the richness and complexity of our Unsurpassed Taste and discover a new level of chocolate bliss.
-          </p>
-        </li>
-        <li>
-          <li class="bubble">
-            <svg class="dollar" width="32" heigth="32">
-              <use href="images/symbol-defs.svg#icon-dollar">
-            </svg>  
+          <li>
+            <ul>
+              <li class="bubble">
+                <svg class="dollar" width="32" heigth="32">
+                  <use href="images/symbol-defs.svg#icon-dollar"></use>
+                </svg>
+              </li>
+            </ul>
+            <h3>Affordable price</h3>
+            <p>
+              Indulge in high-quality chocolate without breaking the bank with Simply Chocolate's
+              selection of affordable treats. Enjoy mouth-watering truffles and velvety chocolate
+              bars without sacrificing taste or quality. Browse our selection and indulge in
+              affordable luxury today.
+            </p>
           </li>
-          <h3>Affordable price</h3>
-          <p>
-            Indulge in high-quality chocolate without breaking the bank with Simply Chocolate's selection of affordable treats. Enjoy mouth-watering truffles and velvety chocolate bars without sacrificing taste or quality. Browse our selection and indulge in affordable luxury today.
-          </p>
-        </li>
-        <li>
-          <li class="bubble">
-            <svg class="spoon" width="28" heigth="28">
-              <use href="images/symbol-defs.svg#icon-spoon">
-            </svg>  
+          <li>
+            <ul>
+              <li class="bubble">
+                <svg class="spoon" width="28" heigth="28">
+                  <use href="images/symbol-defs.svg#icon-spoon"></use>
+                </svg>
+              </li>
+            </ul>
+            <h3>Own production</h3>
+            <p>
+              We take pride in our own production process, ensuring that every step is carefully
+              crafted to perfection. From selecting the finest ingredients to handcrafting each
+              piece, our attention to detail is evident in every bite.
+            </p>
           </li>
-          <h3>Own production</h3>
-          <p>
-            We take pride in our own production process, ensuring that every step is carefully crafted to perfection. From selecting the finest ingredients to handcrafting each piece, our attention to detail is evident in every bite.
-          </p>
-        </li>
+        </ul>
       </section>
       <section>
         <h3>IT ALL ADDS UP TO ONE EXCEPTIONAL TASTE SENSATION</h3>
         <p>
-          At Simply Chocolate, we believe that the secret to exceptional chocolate is in the details. From the sourcing of the finest ingredients to the careful crafting of each individual piece, every step of our process adds up to one exceptional taste sensation.
+          At Simply Chocolate, we believe that the secret to exceptional chocolate is in the
+          details. From the sourcing of the finest ingredients to the careful crafting of each
+          individual piece, every step of our process adds up to one exceptional taste sensation.
         </p>
         <ul>
           <li>
@@ -105,15 +122,18 @@
             <h3>Try our chocolates today and discover the perfect balance of flavor</h3>
             <ol>
               <li>
-                Heat the milk in a saucepan without bringing it to a boil. Add sugar and cocoa powder.
+                Heat the milk in a saucepan without bringing it to a boil. Add sugar and cocoa
+                powder.
               </li>
               <li>At the same time, prepare a water bath. Melt the butter on it.</li>
               <li>
-                "Mix" the milk mixture and already liquid butter. Mix thoroughly with a silicone spatula so that the mass becomes uniform and silky.
+                "Mix" the milk mixture and already liquid butter. Mix thoroughly with a silicone
+                spatula so that the mass becomes uniform and silky.
               </li>
               <li>Heat the mixture over low heat, letting it barely boil.</li>
               <li>
-                Pour the chocolate into special containers (can be replaced with ice molds). Allow to cool and harden.
+                Pour the chocolate into special containers (can be replaced with ice molds). Allow
+                to cool and harden.
               </li>
             </ol>
           </li>
@@ -188,11 +208,13 @@
         <ul>
           <li>
             <p>
-              Crazy enough chocolate originates from a bean just like the coffee bean called Cacao. Cacao has been around for thousands of years and was first discovered by the Native American tribe called the Mayans.
+              Crazy enough chocolate originates from a bean just like the coffee bean called Cacao.
+              Cacao has been around for thousands of years and was first discovered by the Native
+              American tribe called the Mayans.
             </p>
           </li>
           <li>
-            <button type="button" class="btn">Buy now</button>
+            <button type="button" class="btn" data-modal-buy-open>Buy now</button>
           </li>
         </ul>
       </section>
@@ -203,37 +225,42 @@
             <img src="./images/victoriadobrzhanska.jpg" width="80" height="80" alt="" />
             <h3>Victoria Dobrzhanska</h3>
             <p>
-              I love this chocolate bar. Perfect combination of light crispy wafer, covered in a thin layer chocolate.
+              I love this chocolate bar. Perfect combination of light crispy wafer, covered in a
+              thin layer chocolate.
             </p>
           </li>
           <li>
             <img src="./images/nazarbabenko.jpg" width="80" height="80" alt="" />
             <h3>Nazar Babenko</h3>
             <p>
-              This chocolate confection is a delight! A delight! The wafer is light and crisp, the hazelnut cream is smooth, and the chocolate is good.
+              This chocolate confection is a delight! A delight! The wafer is light and crisp, the
+              hazelnut cream is smooth, and the chocolate is good.
             </p>
           </li>
           <li>
             <img src="./images/olenakampusch.jpg" width="80" height="80" alt="" />
             <h3>Olena Kampusch</h3>
             <p>
-              Chocolate is a family favourite treat. Love the delicious smooth chocolate and the creaminess inside. The wafer is soft but crunchy.
+              Chocolate is a family favourite treat. Love the delicious smooth chocolate and the
+              creaminess inside. The wafer is soft but crunchy.
             </p>
           </li>
         </ul>
         <ul>
           <li>svg puntos</li>
           <li>
-            <button type="button">Leave a review</button>
+            <button class="btn" type="button" data-modal-open>Leave a review</button>
           </li>
         </ul>
       </section>
       <section>
         <h2>EXPLORE OUR NEW CHOCOLATE FIRST</h2>
         <p>
-          From the velvety texture to the rich and complex flavor, our New Chocolate is a true indulgence that will leave you craving more. Made with only the finest ingredients and handcrafted with the utmost care, each piece is a work of art that is sure to please.
+          From the velvety texture to the rich and complex flavor, our New Chocolate is a true
+          indulgence that will leave you craving more. Made with only the finest ingredients and
+          handcrafted with the utmost care, each piece is a work of art that is sure to please.
         </p>
-        <button type="button" class="btn">Suscribe</button>
+        <button type="button" class="btn" data-modal-subs-open>Suscribe</button>
       </section>
     </main>
     <footer>
@@ -248,6 +275,7 @@
             </li>
           </ul>
         </li>
+      </ul>
       <ul class="menu">
         <li class="menu__link">Home</li>
         <li class="menu__link">How it's made</li>
@@ -256,5 +284,150 @@
         <li class="menu__link">Chocolate is loved</li>
       </ul>
     </footer>
+    <div class="location-modal backdrop is-hidden" data-modal>
+      <div class="modal">
+        <div class="modal__header">
+          <button class="btn--close-modal btn" data-modal-close>
+            <svg class="svg-close-modal">
+              <use href="./images/symbol-defs.svg#icon-x-close"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="modal__main">
+          <h3 class="modal__title">
+            LEAVE A REVIEW ABOUT <span class="main__title">OUR CHOCOLATE</span>
+          </h3>
+          <form name="review-form">
+            <fieldset class="review">
+              <input
+                class="review-form__input"
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Name"
+              />
+              <input
+                class="review-form__input"
+                type="email"
+                name="email-modal"
+                id="email-modal"
+                placeholder="Email"
+              />
+              <label for="phone" class="review__label-phone">
+                <div class="phone__svg-id">
+                  <svg class="review-form__svg">
+                    <use href="images/symbol-defs.svg#icon-flag"></use>
+                  </svg>
+                  +380
+                </div>
+                <input
+                  class="review-form__input input--phone"
+                  type="tel"
+                  name="phone"
+                  id="phone"
+                  placeholder="Phone Number"
+                />
+              </label>
+              <textarea
+                class="review-form__input input--textarea"
+                rows="5"
+                type="text"
+                name="comment"
+                id="comment"
+                placeholder="Enter text"
+              ></textarea>
+              <button type="submit" class="btn btn--modal-form">Send</button>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="location-modal backdrop is-hidden" data-modal-subscribe>
+      <div class="modal">
+        <div class="modal__header header--subscribe">
+          <img class="header__image" src="images/newchocolate.jpg" alt="" />
+          <button class="btn--close-modal btn--subs-modal-close btn" data-modal-subs-close>
+            <svg class="svg-close-modal">
+              <use href="./images/symbol-defs.svg#icon-x-close-white"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="modal__main--subs">
+          <h3 class="modal__title">
+            EXPLORE OUR <span class="main__title">NEW CHOCOLATE</span> FIRST!
+          </h3>
+          <form name="subscribe-form">
+            <fieldset class="subscribe">
+              <input
+                class="review-form__input subscribe__email"
+                type="email"
+                name="email-modal"
+                id="email-modal"
+                placeholder="Email"
+              />
+              <button type="submit" class="btn btn--subs-modal">Submit</button>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="location-modal backdrop is-hidden" data-modal-buy>
+      <div class="modal">
+        <div class="modal__header header--subscribe">
+          <button class="btn--close-modal btn--subs-modal-close btn" data-modal-buy-close>
+            <svg class="svg-close-modal">
+              <use href="./images/symbol-defs.svg#icon-x-close"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="modal__main--subs">
+          <h3 class="modal__title"><span class="main__title">BUY</span> NOW</h3>
+          <form name="review-form">
+            <fieldset class="review">
+              <input
+                class="review-form__input"
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Name"
+              />
+              <input
+                class="review-form__input"
+                type="email"
+                name="email-modal"
+                id="email-modal"
+                placeholder="Email"
+              />
+              <label for="phone" class="review__label-phone">
+                <div class="phone__svg-id">
+                  <svg class="review-form__svg">
+                    <use href="images/symbol-defs.svg#icon-flag"></use>
+                  </svg>
+                  +380
+                </div>
+                <input
+                  class="review-form__input input--phone"
+                  type="tel"
+                  name="phone"
+                  id="phone"
+                  placeholder="Phone Number"
+                />
+              </label>
+              <textarea
+                class="review-form__input input--textarea"
+                rows="5"
+                type="text"
+                name="comment"
+                id="comment"
+                placeholder="Enter text"
+              ></textarea>
+              <button type="submit" class="btn btn--modal-form">Send</button>
+            </fieldset>
+        </div>
+      </div>
+    </div>
+    <script src="../js/modal.js"></script>
+    <script src="../js/subs.modal.js"></script>
+    <script src="../js/buy.modal.js"></script>
   </body>
 </html>
