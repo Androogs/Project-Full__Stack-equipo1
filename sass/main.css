@@ -1,0 +1,320 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,700&display=swap");
+/*Modal*/
+.location-modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  background-color: #fff;
+  width: 311px;
+  border-radius: 8px;
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 517px;
+    border-radius: 15px;
+  }
+}
+
+.backdrop {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(17, 17, 17, 0.1019607843);
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal__header {
+  position: relative;
+}
+
+.svg-close-modal {
+  width: 24px;
+  height: 24px;
+  fill: #111;
+}
+@media screen and (min-width: 768px) {
+  .svg-close-modal {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.btn--close-modal {
+  position: absolute;
+  left: 250px;
+}
+@media screen and (min-width: 768px) {
+  .btn--close-modal {
+    left: 430px;
+  }
+}
+
+.modal__title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  padding-bottom: 32px;
+}
+@media screen and (min-width: 768px) {
+  .modal__title {
+    width: 294px;
+  }
+}
+
+.modal__main {
+  padding-left: 24px;
+  padding-right: 32px;
+  padding-top: 32px;
+}
+.modal__main--subs {
+  padding: 32px 24px;
+}
+
+.main__title {
+  color: #fd9222;
+}
+
+.review {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  padding-bottom: 18px;
+  width: 85%;
+  border: 0;
+}
+@media screen and (min-width: 768px) {
+  .review {
+    width: 82%;
+  }
+}
+
+.review-form {
+  width: 263px;
+  border: 1.5 rgba(64, 64, 64, 0.3019607843);
+}
+.review-form__input {
+  padding: 14px 18px;
+  border-radius: 8px;
+}
+.review-form__svg {
+  width: 24px;
+  height: 24px;
+}
+@media screen and (min-width: 768px) {
+  .review-form__input {
+    width: 437px;
+    padding: 22px 24px;
+    border-radius: 13px;
+  }
+}
+
+.review__label-phone {
+  position: relative;
+}
+
+.input--phone {
+  padding-right: 18px;
+  padding-left: 105px;
+  width: 269px;
+}
+@media screen and (min-width: 768px) {
+  .input--phone {
+    width: 437px;
+  }
+}
+
+.phone__svg-id {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  top: 15px;
+  left: 15px;
+}
+.phone__svg-id::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 1px;
+  height: 100%;
+  left: 82px;
+  background-color: rgba(64, 64, 64, 0.3019607843);
+}
+@media screen and (min-width: 768px) {
+  .phone__svg-id {
+    top: 22px;
+  }
+}
+
+.header__image {
+  width: 100%;
+  border-radius: 15px 15px 0px 0px;
+}
+
+.input--textarea {
+  resize: none;
+}
+
+.subscribe {
+  position: relative;
+  border: 0;
+}
+@media screen and (min-width: 768px) {
+  .subscribe {
+    position: static;
+    display: flex;
+    gap: 28px;
+  }
+}
+
+.subscribe__email {
+  border-radius: 25px;
+}
+@media screen and (min-width: 768px) {
+  .subscribe__email {
+    width: 313px;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #111;
+}
+
+img {
+  display: block;
+}
+
+:focus,
+:focus-visible,
+:focus-within {
+  outline: none;
+}
+
+.container {
+  width: 375px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding: 0 32px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
+.list {
+  list-style: none;
+}
+
+.btn {
+  cursor: pointer;
+  padding: 12px 28px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  background-color: #fd9222;
+  border: none;
+  border-radius: 100px;
+}
+@media screen and (min-width: 768px) {
+  .btn {
+    padding: 14px 40px;
+    font-size: 18px;
+  }
+}
+.btn:hover, .btn:focus, .btn:focus-visible, .btn:focus-within {
+  color: #fd9222;
+  background-color: #fcf1e0;
+}
+.btn--transparent {
+  background-color: transparent;
+  border: 1px solid #fff;
+}
+.btn--transparent:hover, .btn--transparent:focus, .btn--transparent:focus-visible, .btn--transparent:focus-within {
+  color: #fd9222;
+  border-color: #fd9222;
+  background-color: transparent;
+}
+.btn--close-modal {
+  background-color: transparent;
+}
+.btn--close-modal:hover, .btn--close-modal:focus, .btn--close-modal:focus-visible, .btn--close-modal:focus-within {
+  color: #fff;
+  border-color: #fff;
+  background-color: transparent;
+}
+.btn--subs-modal {
+  position: absolute;
+  padding: 18px 28px;
+  left: 162px;
+}
+@media screen and (min-width: 768px) {
+  .btn--subs-modal {
+    position: static;
+  }
+}
+.btn--subs-modal-close {
+  position: absolute;
+  top: 0px;
+}
+
+* {
+  list-style: none;
+}
+
+.bubble {
+  width: 32px;
+  height: 32px;
+  border-bottom: 50px;
+  border-radius: 50%;
+  border-color: rgba(255, 255, 255, 0.5);
+  border: 1px solid;
+}
+
+.cocoa {
+  fill: rgb(253, 146, 34);
+  margin-left: 8px;
+  transform: translateY(28%);
+}
+
+.dollar {
+  fill: rgb(253, 146, 34);
+  margin-left: 7px;
+  transform: translateY(-34%);
+}
+
+.spoon {
+  fill: rgb(253, 146, 34);
+  margin-left: 8px;
+  transform: translateY(-35%);
+}/*# sourceMappingURL=main.css.map */
