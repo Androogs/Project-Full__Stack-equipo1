@@ -12,10 +12,9 @@
   align-items: start;
   background-color: $white;
   width: 311px;
-  border-radius: 8px;
+  border-radius: 15px;
   @media screen and (min-width: 768px) {
     width: 517px;
-    border-radius: 15px;
   }
 }
 
@@ -63,6 +62,9 @@
   font-weight: 600;
   font-size: 20px;
   line-height: 1.2;
+  &--buy {
+    text-align: center;
+  }
 
   padding-bottom: 32px;
   @media screen and (min-width: 768px) {
@@ -70,6 +72,9 @@
   }
 }
 .modal__main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   padding-left: 24px;
   padding-right: 32px;
   padding-top: 32px;
@@ -94,8 +99,8 @@
 }
 .review-form {
   width: 263px;
-  border: 1.5 $color-gray;
   &__input {
+    border: 1.5px solid $black-o10;
     padding: 14px 18px;
     border-radius: 8px;
   }
@@ -109,6 +114,9 @@
       padding: 22px 24px;
       border-radius: 13px;
     }
+    &__input-buy {
+      width: 513px;
+    }
   }
 }
 .review__label-phone {
@@ -120,6 +128,9 @@
   width: 269px;
   @media screen and (min-width: 768px) {
     width: 437px;
+    &-buy {
+      width: 513px;
+    }
   }
 }
 .phone__svg-id {
@@ -136,7 +147,7 @@
     width: 1px;
     height: 100%;
     left: 82px;
-    background-color: $color-gray;
+    background-color: $black-o10;
   }
   @media screen and (min-width: 768px) {
     top: 22px;
@@ -162,5 +173,70 @@
   border-radius: 25px;
   @media screen and (min-width: 768px) {
     width: 313px;
+  }
+}
+
+.buy-modal {
+  overflow-y: scroll;
+  @media screen and (min-width: 768px) {
+    width: 610px;
+  }
+}
+.list-products {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding-bottom: 32px;
+}
+.product-card {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid $black-o10;
+  border-radius: 15px;
+  width: 263px;
+  &__image {
+    width: 84px;
+    height: 69px;
+  }
+  &__qty {
+    border: 1px solid $black-o10;
+    border-radius: 100px;
+    padding: 6px 16px;
+  }
+  @media screen and (min-width: 768px) {
+    flex-wrap: wrap;
+    width: 160px;
+    padding: 24px 20px 18px 20px;
+  }
+}
+.card-logo {
+  position: absolute;
+  left: 230px;
+  @media screen and (min-width: 768px) {
+    left: 465px;
+  }
+}
+.svg--buy {
+  top: 33px;
+  @media screen and (min-width: 768px) {
+    top: 40px;
+  }
+}
+.personal-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  @media screen and (min-width: 768px) {
+    gap: 21px;
+  }
+}
+.input-name,
+.input-surname {
+  width: 269px;
+  @media screen and (min-width: 768px) {
+    width: 246px;
   }
 }
