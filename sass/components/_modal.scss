@@ -49,14 +49,6 @@
   }
 }
 
-.btn--close-modal {
-  position: absolute;
-  left: 250px;
-  @media screen and (min-width: 768px) {
-    left: 430px;
-  }
-}
-
 .modal__title {
   font-style: normal;
   font-weight: 600;
@@ -65,10 +57,17 @@
   &--buy {
     text-align: center;
   }
-
   padding-bottom: 32px;
   @media screen and (min-width: 768px) {
-    width: 294px;
+    text-align: left;
+    position: relative;
+    &--review {
+      right: 80px;
+      width: 298px;
+    }
+    &--subs {
+      width: 298px;
+    }
   }
 }
 .modal__main {
@@ -214,13 +213,13 @@
 }
 .card-logo {
   position: absolute;
-  left: 230px;
+  left: 215px;
   @media screen and (min-width: 768px) {
     left: 465px;
   }
 }
 .svg--buy {
-  top: 33px;
+  top: 30px;
   @media screen and (min-width: 768px) {
     top: 40px;
   }
