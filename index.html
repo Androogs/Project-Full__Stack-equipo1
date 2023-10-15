@@ -7,7 +7,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="stylesheet" href="./sass/main.css" />
     <title>SIMPLY CHOCOLATE - Welcome</title>
   </head>
   <body>
@@ -313,14 +313,14 @@
     <div class="location-modal backdrop is-hidden" data-modal>
       <div class="modal">
         <div class="modal__header">
-          <button class="btn--close-modal btn" data-modal-close>
+          <button class="modal__btn modal__btn--close-modal-review" data-modal-close>
             <svg class="svg-close-modal">
               <use href="./images/symbol-defs.svg#icon-x-close"></use>
             </svg>
           </button>
         </div>
         <div class="modal__main">
-          <h3 class="modal__title">
+          <h3 class="modal__title modal__title--review">
             LEAVE A REVIEW ABOUT <span class="main__title">OUR CHOCOLATE</span>
           </h3>
           <form name="review-form">
@@ -372,15 +372,15 @@
       <div class="modal">
         <div class="modal__header header--subscribe">
           <img class="header__image" src="images/newchocolate.jpg" alt="" />
-          <button class="btn--close-modal btn--subs-modal-close btn" data-modal-subs-close>
+          <button class="modal__btn  modal__btn--subs-modal-close" data-modal-subs-close>
             <svg class="svg-close-modal">
               <use href="./images/symbol-defs.svg#icon-x-close-white"></use>
             </svg>
           </button>
         </div>
         <div class="modal__main--subs">
-          <h3 class="modal__title">
-            EXPLORE OUR <span class="main__title">NEW CHOCOLATE</span> FIRST!
+          <h3 class="modal__title modal__title--subs">
+            EXPLORE OUR<br><span class="main__title">NEW CHOCOLATE</span> FIRST!
           </h3>
           <form name="subscribe-form">
             <fieldset class="subscribe">
@@ -400,7 +400,7 @@
     <div class="location-modal backdrop is-hidden" data-modal-buy>
       <div class="modal buy-modal">
         <div class="modal__header">
-          <button class="btn--close-modal btn" data-modal-buy-close>
+          <button class="modal__btn modal__btn--close-modal" data-modal-buy-close>
             <svg class="svg-close-modal">
               <use href="./images/symbol-defs.svg#icon-x-close"></use>
             </svg>

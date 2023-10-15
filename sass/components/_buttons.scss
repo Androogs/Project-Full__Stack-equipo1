@@ -33,16 +33,18 @@
       background-color: transparent;
     }
   }
-
+}
+.modal__btn {
+  cursor: pointer;
+  background-color: transparent;
+  border: 0px;
+  position: absolute;
+  left: 273px;
+  top: 14px;
   &--close-modal {
-    background-color: transparent;
-    &:hover,
-    &:focus,
-    &:focus-visible,
-    &:focus-within {
-      color: $white;
-      border-color: $white;
-      background-color: transparent;
+    @media screen and (min-width: 768px) {
+      left: 471px;
+      top: 10px;
     }
   }
   &--subs-modal {
@@ -54,7 +56,21 @@
     }
   }
   &--subs-modal-close {
-    position: absolute;
-    top: 0px;
+    @media screen and (min-width: 768px) {
+      left: 471px;
+      top: 10px;
+    }
+  }
+  &--close-modal-review {
+    @media screen and (min-width: 768px) {
+      left: 465px;
+      top: 24px;
+    }
+  }
+  &--close-modal {
+    @media screen and (min-width: 768px) {
+      left: 557px;
+      top: 18px;
+    }
   }
 }
