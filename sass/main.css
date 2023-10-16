@@ -204,9 +204,6 @@
   }
 }
 
-.buy-modal {
-  overflow-y: scroll;
-}
 @media screen and (min-width: 768px) {
   .buy-modal {
     width: 610px;
@@ -443,6 +440,11 @@ img {
   display: flex;
   overflow-x: scroll;
   gap: 20px;
+}
+.products-list::-webkit-scrollbar {
+  width: 20px;
+  background-color: #fff;
+  display: none;
 }
 
 .products__item {
