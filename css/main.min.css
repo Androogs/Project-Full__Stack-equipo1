@@ -185,7 +185,10 @@
     width: 313px;
   }
 }
-@media screen and (min-width: 768px) {
+<<<<<<< HEAD ======= .buy-modal {
+  overflow-y: scroll;
+}
+>>>>>>>c1a6d2b (trabajo sesesion sensation) @media screen and (min-width: 768px) {
   .buy-modal {
     width: 610px;
   }
