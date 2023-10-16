@@ -34,3 +34,43 @@
     }
   }
 }
+.modal__btn {
+  cursor: pointer;
+  background-color: transparent;
+  border: 0px;
+  position: absolute;
+  left: 273px;
+  top: 14px;
+  &--close-modal {
+    @media screen and (min-width: 768px) {
+      left: 471px;
+      top: 10px;
+    }
+  }
+  &--subs-modal {
+    position: absolute;
+    padding: 18px 28px;
+    left: 162px;
+    @media screen and (min-width: 768px) {
+      position: static;
+    }
+  }
+  &--subs-modal-close {
+    @media screen and (min-width: 768px) {
+      left: 471px;
+      top: 10px;
+    }
+  }
+  &--close-modal-review {
+    @media screen and (min-width: 768px) {
+      left: 465px;
+      top: 24px;
+    }
+  }
+  &--close-modal {
+    @media screen and (min-width: 768px) {
+      left: 557px;
+      top: 18px;
+    }
+  }
+}
