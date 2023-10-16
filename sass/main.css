@@ -637,4 +637,62 @@ img {
 
 .btn__dimention {
   margin: 25px 40px 14px 40px;
+}
+
+.sensation {
+  padding: 128px 32px 128px 32px;
+}
+.sensation__title {
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 28px;
+  letter-spacing: -0.03em;
+  width: 411px;
+  margin-left: 394.5px;
+  color: #111;
+  text-align: center;
+}
+.sensation__text {
+  text-align: center;
+  width: 486px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.02em;
+  color: #111;
+  margin-left: 357px;
+  padding-top: 28px;
+}
+
+.taste {
+  color: #fd9222;
+}
+
+.card {
+  display: flex;
+  gap: 19px;
+  padding-top: 50px;
+}
+.card__list {
+  background-color: #fd9222;
+  width: 270px;
+  height: 270px;
+  border-radius: 15px;
+  padding: 28px 36px 28px 28px;
+}
+.card__list--color {
+  background-color: #fff;
+  color: #111;
+  border: 1px solid #fd9222;
+}
+.card__list--colors {
+  background-color: #111;
+  color: #fff;
+}
+.card__text {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: -0.02em;
+  padding-top: 30px;
 }/*# sourceMappingURL=main.css.map */

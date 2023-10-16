@@ -1,0 +1,57 @@
+.sensation {
+  padding: 128px 32px 128px 32px;
+  &__title {
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 28px;
+    letter-spacing: -0.03em;
+    width: 411px;
+    margin-left: 394.5px;
+    color: $black;
+    text-align: center;
+  }
+  &__text {
+    text-align: center;
+    width: 486px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -0.02em;
+    color: $black;
+    margin-left: 357px;
+    padding-top: 28px;
+  }
+}
+
+.taste {
+  color: $accent;
+}
+
+.card {
+  display: flex;
+  gap: 19px;
+  padding-top: 50px;
+  &__list {
+    background-color: $accent;
+    width: 270px;
+    height: 270px;
+    border-radius: 15px;
+    padding: 28px 36px 28px 28px;
+  }
+  &__list--color {
+    background-color: $white;
+    color: $black;
+    border: 1px solid $accent;
+  }
+  &__list--colors {
+    background-color: $black;
+    color: $white;
+  }
+  &__text {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: -0.02em;
+    padding-top: 30px;
+  }
+}
