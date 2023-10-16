@@ -1,24 +1,20 @@
 .sensation {
-  padding: 128px 32px 128px 32px;
+  padding: 72px 0px;
   &__title {
     font-size: 24px;
     font-weight: 800;
     line-height: 28px;
     letter-spacing: -0.03em;
-    width: 411px;
-    margin-left: 394.5px;
     color: $black;
     text-align: center;
   }
   &__text {
     text-align: center;
-    width: 486px;
     font-size: 14px;
     font-weight: 400;
     line-height: 18px;
     letter-spacing: -0.02em;
     color: $black;
-    margin-left: 357px;
     padding-top: 28px;
   }
 }
@@ -29,14 +25,25 @@
 
 .card {
   display: flex;
-  gap: 19px;
+  flex-wrap: wrap;
+  gap: 20px;
   padding-top: 50px;
+
   &__list {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 375px;
     background-color: $accent;
-    width: 270px;
-    height: 270px;
     border-radius: 15px;
-    padding: 28px 36px 28px 28px;
+    padding: 28px 55px 71px 56px;
+    @media screen and (min-width: 768px) {
+      width: 336px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 284px;
+    }
   }
   &__list--color {
     background-color: $white;
@@ -48,10 +55,17 @@
     color: $white;
   }
   &__text {
+    text-align: left;
     font-size: 14px;
     font-weight: 600;
     line-height: 18px;
     letter-spacing: -0.02em;
     padding-top: 30px;
+  }
+  @media screen and (min-width: 768px) {
+    gap: 10px;
+  }
+  @media screen and (min-width: 1200px) {
+    gap: 19px;
   }
 }
