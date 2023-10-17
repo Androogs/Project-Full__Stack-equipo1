@@ -456,7 +456,9 @@
           </ul>
           <form name="buy-form" class="buy-form">
             <fieldset class="review">
-              <p>Personal Information</p>
+              <label for="name">
+                <p>Personal Information</p>
+              </label>
               <div class="personal-info">
                 <input
                   class="review-form__input input-name"
@@ -475,14 +477,14 @@
               </div>
               <label for="email">
                 <p>Email</p>
-                <input
-                  class="review-form__input review-form__input-buy"
-                  type="email"
-                  name="email-modal"
-                  id="email-modal"
-                  placeholder="Email"
-                />
               </label>
+              <input
+                class="review-form__input review-form__input-buy"
+                type="email"
+                name="email-modal"
+                id="email-modal"
+                placeholder="Email"
+              />
               <label for="phone" class="review__label-phone">
                 <p>Phone Number</p>
                 <div class="phone__svg-id svg--buy">
@@ -491,14 +493,14 @@
                   </svg>
                   +380
                 </div>
-                <input
-                  class="review-form__input input--phone input--phone-buy"
-                  type="tel"
-                  name="phone"
-                  id="phone"
-                  placeholder="Phone Number"
-                />
               </label>
+              <input
+                class="review-form__input input--phone input--phone-buy"
+                type="tel"
+                name="phone"
+                id="phone"
+                placeholder="Phone Number"
+              />
               <label for="card" class="review__label-phone">
                 <p>Card Number</p>
                 <div class="svg--buy card-logo">
@@ -506,16 +508,18 @@
                     <use href="images/symbol-defs.svg#icon-Mastercard"></use>
                   </svg>
                 </div>
-                <input
-                  class="review-form__input review-form__input-buy"
-                  type="text"
-                  inputmode="numeric"
-                  name="card"
-                  id="card"
-                  placeholder="Enter Card"
-                />
               </label>
-              <p>Comment</p>
+              <input
+                class="review-form__input review-form__input-buy"
+                type="text"
+                inputmode="numeric"
+                name="card"
+                id="card"
+                placeholder="Enter Card"
+              />
+              <label for="comment">
+                <p>Comment</p>
+              </label>
               <textarea
                 class="review-form__input input--textarea review-form__input-buy"
                 rows="5"
