@@ -97,8 +97,10 @@
   }
 }
 .review-form {
-  width: 269px;
+  display: flex;
+  justify-content: center;
   &__input {
+    width: 269px;
     border: 1.5px solid $black-o10;
     padding: 14px 18px;
     border-radius: 8px;
@@ -124,7 +126,6 @@
 .input--phone {
   padding-right: 18px;
   padding-left: 105px;
-  width: 269px;
   @media screen and (min-width: 768px) {
     width: 437px;
     &-buy {
@@ -180,6 +181,10 @@
     width: 610px;
   }
 }
+.buy-form {
+  display: flex;
+  justify-content: center;
+}
 .list-products {
   display: flex;
   justify-content: center;
@@ -233,7 +238,6 @@
 }
 .input-name,
 .input-surname {
-  width: 269px;
   @media screen and (min-width: 768px) {
     width: 246px;
   }
