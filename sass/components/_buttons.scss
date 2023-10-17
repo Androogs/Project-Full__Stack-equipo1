@@ -33,6 +33,7 @@
     }
   }
 }
+
 .modal__btn {
   cursor: pointer;
   background-color: transparent;
@@ -48,7 +49,7 @@
   }
   &--subs-modal {
     position: absolute;
-    padding: 18px 28px;
+    padding: 17px 28px;
     left: 162px;
     @media screen and (min-width: 768px) {
       position: static;
