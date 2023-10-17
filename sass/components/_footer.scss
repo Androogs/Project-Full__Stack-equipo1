@@ -1,0 +1,107 @@
+.footer {
+  background-color: #1e1823;
+  color: #ffffff;
+  height: 240px;
+}
+
+.footer__text {
+  font-size: 28px;
+  white-space: pre-line;
+  border-bottom: 1px solid #ffffff1a;
+}
+
+.first__letter {
+  color: #fd9222;
+}
+
+.chocolate_phrase {
+  margin-left: 10px;
+}
+
+.contact__space {
+  margin-bottom: 10px;
+  margin-right: 210px;
+}
+
+.link__first {
+  text-decoration: none;
+  color: #ffffff;
+  margin-right: 147px;
+}
+
+.link__second {
+  text-decoration: none;
+  color: #ffffff;
+  margin-right: 100px;
+}
+
+.link__block {
+  transform: translateY(80%);
+}
+
+.link__first:hover {
+  color: #fd9222;
+}
+
+.link__second:hover {
+  color: #fd9222;
+}
+
+.contact__dimention {
+  text-align: right;
+  transform: translateY(-140%);
+}
+
+.contact__space {
+  margin-bottom: 30px;
+  margin-right: 210px;
+  transform: translateY(310%);
+}
+
+.contact__svg {
+  display: flex;
+  justify-content: right;
+}
+
+.first__part {
+  text-align: right;
+  transform: translateY(-150%);
+}
+
+.menu {
+  padding-left: 30px;
+  transform: translateY(-480%);
+}
+
+.menu__link {
+  text-decoration: none;
+  color: #ffffff;
+  display: inline;
+  padding: 12px;
+  cursor: pointer;
+}
+
+.menu__link:hover {
+  color: #fd9222;
+}
+
+.svg__instagram {
+  fill: #ffffff;
+  cursor: pointer;
+  display: inline;
+}
+
+.svg__instagram:hover {
+  fill: #fd9222;
+}
+
+.svg__twitter {
+  fill: #ffffff;
+  cursor: pointer;
+  display: inline;
+  margin-left: 15px;
+}
+
+.svg__twitter:hover {
+  fill: #fd9222;
+}
