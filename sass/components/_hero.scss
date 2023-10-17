@@ -1,7 +1,7 @@
 .hero {
   width: 335px;
   height: 621px;
-  background-image: url(../../images/herochocolate@3x.jpg);
+  background-image: url(../images/herochocolate@3x.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -10,13 +10,13 @@
   @media screen and (min-width: 768px) {
     width: 704px;
     height: 890px;
-    background-image: url(../../images/herochocolate@2x.jpg);
+    background-image: url(../images/herochocolate@2x.jpg);
   }
 
   @media screen and (min-width: 1200px) {
     width: 1136px;
     height: 600px;
-    background-image: url(../../images/herochocolate.jpg);
+    background-image: url(../images/herochocolate.jpg);
   }
 
   .container {
