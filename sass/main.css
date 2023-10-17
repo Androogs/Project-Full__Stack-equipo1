@@ -328,6 +328,10 @@ img {
   list-style: none;
 }
 
+.section {
+  margin: 0 auto;
+}
+
 .btn {
   cursor: pointer;
   padding: 12px 28px;
@@ -341,7 +345,6 @@ img {
 @media screen and (min-width: 768px) {
   .btn {
     padding: 14px 40px;
-    font-size: 18px;
   }
 }
 .btn:hover, .btn:focus, .btn:focus-visible, .btn:focus-within {
@@ -374,7 +377,7 @@ img {
 }
 .modal__btn--subs-modal {
   position: absolute;
-  padding: 18px 28px;
+  padding: 17px 28px;
   left: 162px;
 }
 @media screen and (min-width: 768px) {
@@ -398,6 +401,59 @@ img {
   .modal__btn--close-modal {
     left: 557px;
     top: 18px;
+  }
+}
+
+.scroll-btn {
+  cursor: pointer;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.17;
+  letter-spacing: -0.03em;
+  border: none;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+}
+.scroll-btn:hover, .scroll-btn:focus, .scroll-btn:focus-visible, .scroll-btn:focus-within {
+  color: #fd9222;
+}
+.scroll-btn:hover .scroll-icon, .scroll-btn:focus .scroll-icon, .scroll-btn:focus-visible .scroll-icon, .scroll-btn:focus-within .scroll-icon {
+  background-color: #fd9222;
+  fill: #fff;
+}
+@media screen and (min-width: 768px) {
+  .scroll-btn {
+    font-size: 14px;
+    line-height: 1.28;
+  }
+}
+.scroll-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 14px;
+  background-color: #fff;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  fill: #fd9222;
+}
+@media screen and (min-width: 768px) {
+  .scroll-icon {
+    width: 38px;
+    height: 38px;
+  }
+}
+.scroll-svg {
+  width: 16px;
+  height: 16px;
+}
+@media screen and (min-width: 768px) {
+  .scroll-svg {
+    width: 22px;
+    height: 22px;
   }
 }
 
@@ -426,6 +482,80 @@ img {
   fill: #fd9222;
   margin-left: 8px;
   transform: translateY(-35%);
+}
+
+.hero {
+  width: 335px;
+  height: 621px;
+  background-image: url(../../images/herochocolate@3x.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border-radius: 30px;
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    width: 704px;
+    height: 890px;
+    background-image: url(../../images/herochocolate@2x.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    width: 1136px;
+    height: 600px;
+    background-image: url(../../images/herochocolate.jpg);
+  }
+}
+.hero .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  justify-content: flex-end;
+}
+@media screen and (min-width: 768px) {
+  .hero .container {
+    padding: 40px;
+  }
+}
+.hero__title {
+  width: 295px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  text-align: start;
+  margin-bottom: 32px;
+}
+@media screen and (min-width: 768px) {
+  .hero__title {
+    width: 484px;
+    font-size: 28px;
+  }
+}
+.hero__btns {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+}
+@media screen and (min-width: 768px) {
+  .hero__btns {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.hero__btns .btns__list {
+  display: flex;
+  gap: 14px;
+}
+@media screen and (min-width: 768px) {
+  .hero__btns .btns__list {
+    gap: 12px;
+  }
 }
 
 .sensation {
