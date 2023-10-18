@@ -2,7 +2,10 @@
 * {
   margin: 0;
   padding: 0;
+  list-style: none;
+  text-decoration: none;
 }
+
 :root {
   --color--header: rgb(250, 250, 250);
   --color--img--hero: rgba(17, 17, 17, 0), rgba(17, 17, 17, 1);
@@ -30,6 +33,83 @@ img {
   width: 375px;
   margin: 0 auto;
   padding: 0 20px;
+}
+.section {
+  padding-top: 128px;
+  padding-bottom: 128px;
+}
+.container-made {
+  display: flex;
+  width: 1136px;
+  height: 478px;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  flex-shrink: 0;
+}
+.blocks-container {
+  display: flex;
+  width: 1136px;
+  height: 400px;
+  align-items: flex-start;
+  gap: 20px;
+}
+.blocks {
+  display: flex;
+  width: 516px;
+  height: 400px;
+  padding: 32px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 15px;
+  background: #fff;
+  gap: 20px;
+}
+.preparation {
+  display: flex;
+  width: 452px;
+  height: 260px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  flex-shrink: 0;
+}
+.text {
+  display: flex;
+  width: 452px;
+  height: 336px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 28px;
+  flex-shrink: 0;
+}
+.t {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.t1 {
+  color: #111;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px; /* 116.667% */
+  letter-spacing: -0.72px;
+  text-transform: uppercase;
+}
+.t2 {
+  color: #fd9222;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: -0.72px;
+  text-transform: uppercase;
 }
 @media screen and (min-width: 768px) {
   .container {
