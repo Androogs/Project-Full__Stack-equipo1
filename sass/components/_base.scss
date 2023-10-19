@@ -6,6 +6,7 @@
 body {
   font-family: $main-font-family, sans-serif;
   color: $black;
+  background-color: $bg-main;
 }
 
 img {
@@ -38,5 +39,5 @@ img {
 }
 
 .section {
-  margin: 0 auto;
+  margin: 0 auto 128px;
 }

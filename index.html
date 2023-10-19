@@ -28,7 +28,7 @@
       </nav>
     </header>
     <main>
-      <section class="hero section">
+      <section class="hero">
         <div class="container">
           <h1 class="hero__title">
             Treat yourself or a loved one to our finest ingredients for a moment of pure delight!
@@ -260,41 +260,57 @@
           </div>
         </div>
       </section>
-
-      <section>
-        <h3>CHOCOLATE IS LOVED</h3>
-        <ul>
-          <li>
-            <img src="./images/victoriadobrzhanska.jpg" width="80" height="80" alt="" />
-            <h3>Victoria Dobrzhanska</h3>
-            <p>
-              I love this chocolate bar. Perfect combination of light crispy wafer, covered in a
-              thin layer chocolate.
-            </p>
-          </li>
-          <li>
-            <img src="./images/nazarbabenko.jpg" width="80" height="80" alt="" />
-            <h3>Nazar Babenko</h3>
-            <p>
-              This chocolate confection is a delight! A delight! The wafer is light and crisp, the
-              hazelnut cream is smooth, and the chocolate is good.
-            </p>
-          </li>
-          <li>
-            <img src="./images/olenakampusch.jpg" width="80" height="80" alt="" />
-            <h3>Olena Kampusch</h3>
-            <p>
-              Chocolate is a family favourite treat. Love the delicious smooth chocolate and the
-              creaminess inside. The wafer is soft but crunchy.
-            </p>
-          </li>
-        </ul>
-        <ul>
-          <li>svg puntos</li>
-          <li>
-            <button class="btn" type="button" data-modal-open>Leave a review</button>
-          </li>
-        </ul>
+      <section class="reviews section">
+        <div class="container">
+          <h3 class="section__title">
+            <span class="section__title--accent">CHOCOLATE</span> IS LOVED
+          </h3>
+          <ul class="reviews__list list">
+            <li class="reviews__card">
+              <img
+                class="reviews__img"
+                src="./images/victoriadobrzhanska.jpg"
+                width="80"
+                height="80"
+                alt=""
+              />
+              <h3 class="reviews__name">Victoria Dobrzhanska</h3>
+              <p class="reviews__text">
+                I love this chocolate bar. Perfect combination of light crispy wafer, covered in a
+                thin layer chocolate.
+              </p>
+            </li>
+            <li class="reviews__card">
+              <img
+                class="reviews__img"
+                src="./images/nazarbabenko.jpg"
+                width="80"
+                height="80"
+                alt=""
+              />
+              <h3 class="reviews__name">Nazar Babenko</h3>
+              <p class="reviews__text">
+                This chocolate confection is a delight! A delight! The wafer is light and crisp, the
+                hazelnut cream is smooth, and the chocolate is good.
+              </p>
+            </li>
+            <li class="reviews__card">
+              <img
+                class="reviews__img"
+                src="./images/olenakampusch.jpg"
+                width="80"
+                height="80"
+                alt=""
+              />
+              <h3 class="reviews__name">Olena Kampusch</h3>
+              <p class="reviews__text">
+                Chocolate is a family favourite treat. Love the delicious smooth chocolate and the
+                creaminess inside. The wafer is soft but crunchy.
+              </p>
+            </li>
+          </ul>
+          <button class="btn btn--review" type="button" data-modal-open>Leave a review</button>
+        </div>
       </section>
       <section>
         <h2>EXPLORE OUR NEW CHOCOLATE FIRST</h2>
@@ -348,6 +364,7 @@
                 name="name"
                 id="name"
                 placeholder="Name"
+                autocomplete="off"
               />
               <input
                 class="review-form__input"
@@ -369,6 +386,7 @@
                   name="phone"
                   id="phone"
                   placeholder="Phone Number"
+                  autocomplete="off"
                 />
               </label>
               <textarea
@@ -466,16 +484,18 @@
                   name="name"
                   id="name"
                   placeholder="Name"
+                  autocomplete="off"
                 />
                 <input
                   class="review-form__input input-surname"
                   type="text"
-                  name="name"
-                  id="name"
+                  name="surname"
+                  id="surname"
                   placeholder="Surname"
+                  autocomplete="off"
                 />
               </div>
-              <label for="email">
+              <label for="email-modal">
                 <p class="buy-form__label">Email</p>
               </label>
               <input
@@ -500,6 +520,7 @@
                 name="phone"
                 id="phone"
                 placeholder="Phone Number"
+                  autocomplete="off"
               />
               <label for="card" class="review__label-phone">
                 <p class="buy-form__label">Card Number</p>
