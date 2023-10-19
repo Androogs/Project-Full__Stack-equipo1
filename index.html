@@ -13,20 +13,82 @@
   <body>
     <header>
       <nav class="nav-bar">
-        <h2 class="nav-bar__logo">SIMPLY CHOCOLATE</h2>
-        <ul class="nav-bar__menu">
-          <li class="menu__link">Home</li>
-          <li class="menu__link">How it's made</li>
-          <li class="menu__link">Our products</li>
-          <li class="menu__link">Top Sellers</li>
-          <li class="menu__link">Chocolate is loved</li>
+       <div class="nav-bar__div">
+        <div class="nav-bar__div1">
+        <a class="nav-bar__title" href="#">SIMPLY <span class="nav-bar__title--normal"> CHOCOLATE</span>
+          <svg class="nav-bar__logo" width="24" height="24">
+            <use 
+            href="./images/symbol-defs.svg#iconboletinchocolate" >
+            </use>
+          </svg>
+        </a>
+      </div>
+      
+        <ul class="nav-bar__menu list">
+          <li class="menu__item"> 
+            <a href="#" class="menul__link" rel="noopener noreffer" target="_blank">Home</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menul__link" rel="noopener noreffer" target="_blank">How it's made</a>
+          </li>
+          <li class="menu__item"><a href="#" class="menul__link" rel="noopener noreffer" target="_blank">Our products</a>
+          </li>
+          <li class="menu__item"><a href="#" class="menul__link" rel="noopener noreffer" target="_blank">Top Sellers</a>
+          </li>
+          <li class="menu__item"><a href="#" class="menul__link" rel="noopener noreffer" target="_blank">Chocolate is loved</a>
+          </li>
         </ul>
-        <ul class="nav-bar__social">
-          <li class="social__link">Instagram</li>
-          <li class="social__link">Twitter</li>
-        </ul>
-      </nav>
-    </header>
+      
+      
+        <ul class="nav-bar__social list">
+          <li class="social__list">
+            <a href="#" class="social__link" rel="noopener noreffer" target="_blank">
+              <svg class="social__logo" width="20" height="20">
+                <use
+                  href="./images/symbol-defs.svg#icon-instagram"
+                ></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__list">
+            <a href="#" class="social__link" rel="noopener noreffer" target="_blank">
+              <svg class="social__logo" width="20" height="20">
+                <use
+                  href="./images/symbol-defs.svg#icon-twitter"
+                ></use>
+              </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+         <!-- svg por corregir -->
+        <!-- <svg class="icon-menu" width="24" height="24">
+          <use href="./images/symbol-defs.svg#iconboletinmenu-03">
+          </use>
+        </svg> -->
+        <!-- svg por corregir -->
+          <svg
+            width="24"
+            height="24"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
+        </nav>
+      </header>
+
     <main>
       <section class="hero">
         <h1>
@@ -515,8 +577,50 @@
         </div>
       </div>
     </div>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg width="24" height="24">
+          <use href="./images/symbol-defs.svg#iconboletinx"></use>
+        </svg>
+      </button>
+      <ul class="mobile-menu">
+        <li class="mobile-menu__item"><a href="" class="link">Home</a></li>
+        <li class="mobile-menu__item"><a href="" class="link">How it's made?</a></li>
+        <li class="mobile-menu__item"><a href="" class="link">Our products</a></li>
+        <li class="mobile-menu__item"><a href="" class="link">Top sellers</a></li>
+        <li class="mobile-menu__item"><a href="" class="link">Chocolate is loved</a></li>
+      </ul>
+      <ul class="mobile-networks__list">
+        <li class="mobile-networks__item">
+          <a href="#" class="mobile-networks__links" rel="noopener noreffer" target="_blank">
+            <svg class="network__logo" width="22" height="22">
+              <use
+                href="./images/symbol-defs.svg#icon-instagram"
+              ></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mobile-networks__item">
+          <a href="#" class="mobile-networks__links" rel="noopener noreffer" target="_blank">
+            <svg class="network__logo" width="22" height="22">
+              <use
+                href="./images/symbol-defs.svg#icon-twitter"
+              ></use>
+            </svg>
+            </a>
+          </li>
+      </ul>
+    </div>
+
+
     <script src="./js/modal.js"></script>
     <script src="./js/modalbuy.js"></script>
     <script src="./js/modalsubs.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"></script>
+    <script defer src="js/modalnav.js"></script>
   </body>
 </html>
