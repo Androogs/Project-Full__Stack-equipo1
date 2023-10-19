@@ -152,3 +152,24 @@
     }
   }
 }
+
+.slide {
+  &__list {
+    display: flex;
+    justify-content: center;
+    column-gap: 13px;
+  }
+
+  &__bubble {
+    cursor: pointer;
+    width: 13px;
+    height: 13px;
+    border-radius: 6.5px;
+    background-color: $black-o10;
+
+    &--active {
+      width: 28px;
+      background-color: $accent;
+    }
+  }
+}
