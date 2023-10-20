@@ -1,12 +1,22 @@
 .sensation {
   padding: 72px 0px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   &__title {
-    font-size: 24px;
+    text-align: center;
+    width: 283px;
+    font-size: 20px;
     font-weight: 800;
-    line-height: 28px;
+    line-height: 24px;
     letter-spacing: -0.03em;
     color: $black;
-    text-align: center;
+    @media screen and (min-width: 768px) {
+      width: 350px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 350px;
+    }
   }
   &__text {
     text-align: center;
@@ -16,6 +26,11 @@
     letter-spacing: -0.02em;
     color: $black;
     padding-top: 28px;
+    @media screen and (min-width: 768px) {
+      width: 486px;
+    }
+    @media screen and (min-width: 1200px) {
+    }
   }
 }
 
@@ -24,48 +39,102 @@
 }
 
 .card {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  padding-top: 50px;
-
   &__list {
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 375px;
-    background-color: $accent;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-top: 50px;
+    @media screen and (min-width: 768px) {
+      gap: 32px;
+    }
+    @media screen and (min-width: 1200px) {
+      gap: 19px;
+    }
+  }
+  &__container {
+    width: 335px;
+    height: 270px;
+    overflow: hidden;
     border-radius: 15px;
-    padding: 28px 55px 71px 56px;
     @media screen and (min-width: 768px) {
       width: 336px;
     }
     @media screen and (min-width: 1200px) {
-      width: 284px;
+      width: 270px;
     }
   }
-  &__list--color {
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    border-radius: 15px;
+    padding: 28px;
+    cursor: pointer;
+  }
+  &__img {
+    @media screen and (min-width: 1200px) {
+      width: 206px;
+      height: 160px;
+    }
+  }
+  &__item--info {
+    background-color: $white;
+    color: $black;
+    @media screen and (min-width: 1200px) {
+      padding: 20px;
+    }
+  }
+  &__item--white {
     background-color: $white;
     color: $black;
     border: 1px solid $accent;
   }
-  &__list--colors {
-    background-color: $black;
+  &__item--black {
+    background-color: $bg-black;
+    color: $white;
+  }
+  &__item--accent {
+    background-color: $accent;
     color: $white;
   }
   &__text {
-    text-align: left;
     font-size: 14px;
     font-weight: 600;
-    line-height: 18px;
+    line-height: 1.28;
     letter-spacing: -0.02em;
-    padding-top: 30px;
+    margin-top: 25px;
+    @media screen and (min-width: 1200px) {
+      margin-top: 32px;
+    }
   }
-  @media screen and (min-width: 768px) {
-    gap: 10px;
+}
+
+// ventana info
+
+.info {
+  &__card {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
   }
-  @media screen and (min-width: 1200px) {
-    gap: 19px;
+  &__title {
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: -0.03em;
+    text-align: left;
+    text-transform: uppercase;
+  }
+  &__btns {
+    display: flex;
+    gap: 6px;
+    margin-top: 8px;
+    margin-bottom: 14px;
+  }
+  &__text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.28;
+    letter-spacing: -0.02em;
   }
 }
