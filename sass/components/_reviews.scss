@@ -1,0 +1,72 @@
+.reviews {
+  &__list {
+    display: flex;
+    overflow: hidden;
+    margin-top: 32px;
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 768px) {
+      margin-top: 50px;
+      margin-bottom: 32px;
+      column-gap: 16px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      column-gap: 28px;
+    }
+  }
+
+  &__card {
+    flex: 0 0 335px;
+    padding: 24px;
+    margin-top: 40px;
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    border: 1px solid $black-o10;
+    border-radius: 15px;
+    box-shadow: 0px 9.04932px 26.57166px 0px rgba(215, 228, 249, 0.25);
+
+    @media screen and (min-width: 768px) {
+      flex: 0 0 344px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      flex: 0 0 360px;
+    }
+  }
+
+  &__img {
+    border-radius: 50%;
+    position: absolute;
+    top: -40px;
+  }
+
+  &__name {
+    margin-top: 34px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.33;
+  }
+
+  &__text {
+    margin-top: 24px;
+    color: $black-o70;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.28;
+    letter-spacing: -0.02em;
+  }
+
+  &-btn {
+    margin-top: 32px;
+
+    @media screen and (min-width: 768px) {
+      margin-top: 50px;
+    }
+  }
+}

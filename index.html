@@ -29,61 +29,70 @@
     </header>
     <main>
       <section class="hero">
-        <h1>
-          Treat yourself or a loved one to our finest ingredients for a moment of pure delight!
-        </h1>
-        <button type="button" class="btn" data-modal-buy-open>Buy now</button>
-        <button type="button" class="btn btn--transparent">How it's made</button>
-        <p>scroll down</p>
+        <div class="container">
+          <h1 class="hero__title">
+            Treat yourself or a loved one to our finest ingredients for a moment of pure delight!
+          </h1>
+          <div class="hero__btns">
+            <ul class="btns__list list">
+              <li>
+                <button type="button" class="btn" data-modal-buy-open>Buy now</button>
+              </li>
+              <li>
+                <button type="button" class="btn btn--transparent">How it's made</button>
+              </li>
+            </ul>
+            <button type="button" class="scroll-btn">
+              scroll down
+              <span class="scroll-icon">
+                <svg class="scroll-svg">
+                  <use href="images/symbol-defs.svg#icon-angle"></use>
+                </svg>
+              </span>
+            </button>
+          </div>
+        </div>
       </section>
       <section>
         <ul>
-          <li>
-            <ul>
-              <li class="bubble">
-                <svg class="cocoa" width="28" height="28">
-                  <use href="images/symbol-defs.svg#icon-cocoa"></use>
-                </svg>
-              </li>
-            </ul>
-            <h3>Unsurpassed taste</h3>
-            <p>
-              Crafted with the finest quality cocoa beansand a dedication to perfection, each bite
-              is a decadent experience that simply cannot be matched. Savor the richness and
-              complexity of our Unsurpassed Taste and discover a new level of chocolate bliss.
-            </p>
+          <li class="bubble">
+            <svg class="cocoa" width="28" height="28">
+              <use href="images/symbol-defs.svg#icon-cocoa"></use>
+            </svg>
           </li>
-          <li>
-            <ul>
-              <li class="bubble">
-                <svg class="dollar" width="32" heigth="32">
-                  <use href="images/symbol-defs.svg#icon-dollar"></use>
-                </svg>
-              </li>
-            </ul>
-            <h3>Affordable price</h3>
-            <p>
-              Indulge in high-quality chocolate without breaking the bank with Simply Chocolate's
-              selection of affordable treats. Enjoy mouth-watering truffles and velvety chocolate
-              bars without sacrificing taste or quality. Browse our selection and indulge in
-              affordable luxury today.
-            </p>
+          <h3>Unsurpassed taste</h3>
+          <p>
+            Crafted with the finest quality cocoa beansand a dedication to perfection, each bite is
+            a decadent experience that simply cannot be matched. Savor the richness and complexity
+            of our Unsurpassed Taste and discover a new level of chocolate bliss.
+          </p>
+        </ul>
+        <ul>
+          <li class="bubble">
+            <svg class="dollar" width="32" heigth="32">
+              <use href="images/symbol-defs.svg#icon-dollar"></use>
+            </svg>
           </li>
-          <li>
-            <ul>
-              <li class="bubble">
-                <svg class="spoon" width="28" heigth="28">
-                  <use href="images/symbol-defs.svg#icon-spoon"></use>
-                </svg>
-              </li>
-            </ul>
-            <h3>Own production</h3>
-            <p>
-              We take pride in our own production process, ensuring that every step is carefully
-              crafted to perfection. From selecting the finest ingredients to handcrafting each
-              piece, our attention to detail is evident in every bite.
-            </p>
+          <h3>Affordable price</h3>
+          <p>
+            Indulge in high-quality chocolate without breaking the bank with Simply Chocolate's
+            selection of affordable treats. Enjoy mouth-watering truffles and velvety chocolate bars
+            without sacrificing taste or quality. Browse our selection and indulge in affordable
+            luxury today.
+          </p>
+        </ul>
+        <ul>
+          <li class="bubble">
+            <svg class="spoon" width="28" heigth="28">
+              <use href="images/symbol-defs.svg#icon-spoon"></use>
+            </svg>
           </li>
+          <h3>Own production</h3>
+          <p>
+            We take pride in our own production process, ensuring that every step is carefully
+            crafted to perfection. From selecting the finest ingredients to handcrafting each piece,
+            our attention to detail is evident in every bite.
+          </p>
         </ul>
       </section>
       <section>
@@ -171,7 +180,9 @@
       </section>
       <section class="products">
         <div class="container">
-          <h3>OUR PRODUCTS</h3>
+          <h3 class="sellers__title title--margin">
+            <span class="sellers__title--black">OUR </span>PRODUCTS
+          </h3>
           <ul class="products-list list">
             <li class="products__item item">
               <img src="./images/orange.jpg" width="230" height="201" alt="orange" />
@@ -227,6 +238,16 @@
               <p class="item__price">54 UAH</p>
             </li>
           </ul>
+          <ul class="slide__list list">
+            <li class="slide__bubble slide__bubble--active"></li>
+            <li class="slide__bubble"></li>
+            <li class="slide__bubble"></li>
+            <li class="slide__bubble"></li>
+            <li class="slide__bubble"></li>
+            <li class="slide__bubble"></li>
+            <li class="slide__bubble"></li>
+            <li class="slide__bubble"></li>
+          </ul>
         </div>
       </section>
       <section class="sellers">
@@ -279,41 +300,65 @@
           </div>
         </div>
       </section>
-
-      <section>
-        <h3>CHOCOLATE IS LOVED</h3>
-        <ul>
-          <li>
-            <img src="./images/victoriadobrzhanska.jpg" width="80" height="80" alt="" />
-            <h3>Victoria Dobrzhanska</h3>
-            <p>
-              I love this chocolate bar. Perfect combination of light crispy wafer, covered in a
-              thin layer chocolate.
-            </p>
-          </li>
-          <li>
-            <img src="./images/nazarbabenko.jpg" width="80" height="80" alt="" />
-            <h3>Nazar Babenko</h3>
-            <p>
-              This chocolate confection is a delight! A delight! The wafer is light and crisp, the
-              hazelnut cream is smooth, and the chocolate is good.
-            </p>
-          </li>
-          <li>
-            <img src="./images/olenakampusch.jpg" width="80" height="80" alt="" />
-            <h3>Olena Kampusch</h3>
-            <p>
-              Chocolate is a family favourite treat. Love the delicious smooth chocolate and the
-              creaminess inside. The wafer is soft but crunchy.
-            </p>
-          </li>
-        </ul>
-        <ul>
-          <li>svg puntos</li>
-          <li>
-            <button class="btn" type="button" data-modal-open>Leave a review</button>
-          </li>
-        </ul>
+      <section class="reviews section">
+        <div class="container">
+          <h3 class="section__title">
+            <span class="section__title--accent">CHOCOLATE</span> IS LOVED
+          </h3>
+          <ul class="reviews__list list">
+            <li class="reviews__card">
+              <img
+                class="reviews__img"
+                src="./images/victoriadobrzhanska.jpg"
+                width="80"
+                height="80"
+                alt=""
+              />
+              <h3 class="reviews__name">Victoria Dobrzhanska</h3>
+              <p class="reviews__text">
+                I love this chocolate bar. Perfect combination of light crispy wafer, covered in a
+                thin layer chocolate.
+              </p>
+            </li>
+            <li class="reviews__card">
+              <img
+                class="reviews__img"
+                src="./images/nazarbabenko.jpg"
+                width="80"
+                height="80"
+                alt=""
+              />
+              <h3 class="reviews__name">Nazar Babenko</h3>
+              <p class="reviews__text">
+                This chocolate confection is a delight! A delight! The wafer is light and crisp, the
+                hazelnut cream is smooth, and the chocolate is good.
+              </p>
+            </li>
+            <li class="reviews__card">
+              <img
+                class="reviews__img"
+                src="./images/olenakampusch.jpg"
+                width="80"
+                height="80"
+                alt=""
+              />
+              <h3 class="reviews__name">Olena Kampusch</h3>
+              <p class="reviews__text">
+                Chocolate is a family favourite treat. Love the delicious smooth chocolate and the
+                creaminess inside. The wafer is soft but crunchy.
+              </p>
+            </li>
+          </ul>
+          <ul class="slide__list list">
+            <li class="slide__bubble slide__bubble--active"></li>
+            <li class="slide__bubble"></li>
+            <li class="slide__bubble"></li>
+            <li class="slide__bubble"></li>
+          </ul>
+          <button class="btn btn--review reviews-btn" type="button" data-modal-open>
+            Leave a review
+          </button>
+        </div>
       </section>
       <section>
         <h2>EXPLORE OUR NEW CHOCOLATE FIRST</h2>
@@ -359,7 +404,7 @@
           <h3 class="modal__title modal__title--review">
             LEAVE A REVIEW ABOUT <span class="main__title">OUR CHOCOLATE</span>
           </h3>
-          <form name="review-form">
+          <form name="review-form" class="review-form">
             <fieldset class="review">
               <input
                 class="review-form__input"
@@ -367,6 +412,7 @@
                 name="name"
                 id="name"
                 placeholder="Name"
+                autocomplete="off"
               />
               <input
                 class="review-form__input"
@@ -388,6 +434,7 @@
                   name="phone"
                   id="phone"
                   placeholder="Phone Number"
+                  autocomplete="off"
                 />
               </label>
               <textarea
@@ -427,7 +474,7 @@
                 id="email-modal"
                 placeholder="Email"
               />
-              <button type="submit" class="btn btn--subs-modal">Submit</button>
+              <button type="submit" class="btn modal__btn--subs-modal">Submit</button>
             </fieldset>
           </form>
         </div>
@@ -473,9 +520,11 @@
               <p class="product-card__qty">300 g</p>
             </li>
           </ul>
-          <form name="buy-form">
+          <form name="buy-form" class="buy-form">
             <fieldset class="review">
-              <p>Personal Information</p>
+              <label for="name">
+                <p class="buy-form__label">Personal Information</p>
+              </label>
               <div class="personal-info">
                 <input
                   class="review-form__input input-name"
@@ -483,58 +532,63 @@
                   name="name"
                   id="name"
                   placeholder="Name"
+                  autocomplete="off"
                 />
                 <input
                   class="review-form__input input-surname"
                   type="text"
-                  name="name"
-                  id="name"
+                  name="surname"
+                  id="surname"
                   placeholder="Surname"
+                  autocomplete="off"
                 />
               </div>
-              <label for="email">
-                <p>Email</p>
-                <input
-                  class="review-form__input review-form__input-buy"
-                  type="email"
-                  name="email-modal"
-                  id="email-modal"
-                  placeholder="Email"
-                />
+              <label for="email-modal">
+                <p class="buy-form__label">Email</p>
               </label>
+              <input
+                class="review-form__input review-form__input-buy"
+                type="email"
+                name="email-modal"
+                id="email-modal"
+                placeholder="Email"
+              />
               <label for="phone" class="review__label-phone">
-                <p>Phone Number</p>
+                <p class="buy-form__label">Phone Number</p>
                 <div class="phone__svg-id svg--buy">
                   <svg class="review-form__svg">
                     <use href="images/symbol-defs.svg#icon-flag"></use>
                   </svg>
                   +380
                 </div>
-                <input
-                  class="review-form__input input--phone input--phone-buy"
-                  type="tel"
-                  name="phone"
-                  id="phone"
-                  placeholder="Phone Number"
-                />
               </label>
+              <input
+                class="review-form__input input--phone input--phone-buy"
+                type="tel"
+                name="phone"
+                id="phone"
+                placeholder="Phone Number"
+                autocomplete="off"
+              />
               <label for="card" class="review__label-phone">
-                <p>Card Number</p>
+                <p class="buy-form__label">Card Number</p>
                 <div class="svg--buy card-logo">
                   <svg class="review-form__svg">
                     <use href="images/symbol-defs.svg#icon-Mastercard"></use>
                   </svg>
                 </div>
-                <input
-                  class="review-form__input review-form__input-buy"
-                  type="text"
-                  inputmode="numeric"
-                  name="card"
-                  id="card"
-                  placeholder="Enter Card"
-                />
               </label>
-              <p>Comment</p>
+              <input
+                class="review-form__input review-form__input-buy"
+                type="text"
+                inputmode="numeric"
+                name="card"
+                id="card"
+                placeholder="Enter Card"
+              />
+              <label for="comment">
+                <p class="buy-form__label">Comment</p>
+              </label>
               <textarea
                 class="review-form__input input--textarea review-form__input-buy"
                 rows="5"
