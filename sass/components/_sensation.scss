@@ -55,6 +55,7 @@
     width: 335px;
     height: 270px;
     overflow: hidden;
+    position: relative;
     border-radius: 15px;
     @media screen and (min-width: 768px) {
       width: 336px;
@@ -68,6 +69,7 @@
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
+    height: 100%;
     border-radius: 15px;
     padding: 28px;
     cursor: pointer;
@@ -110,6 +112,10 @@
   }
 }
 
+.card__container:hover .info__card {
+  transform: translateY(-100%);
+}
+
 // ventana info
 
 .info {
@@ -117,6 +123,8 @@
     display: flex;
     flex-direction: column;
     text-align: left;
+    position: absolute;
+    transition: transform 250ms ease;
   }
   &__title {
     font-size: 18px;
