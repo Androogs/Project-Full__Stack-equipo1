@@ -1,0 +1,72 @@
+.hero {
+  margin: 0 auto 72px;
+  width: 335px;
+  height: 621px;
+  background-image: url(../images/herochocolate@3x.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border-radius: 30px;
+
+  @media screen and (min-width: 768px) {
+    width: 704px;
+    height: 890px;
+    background-image: url(../images/herochocolate@2x.jpg);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1136px;
+    height: 600px;
+    background-image: url(../images/herochocolate.jpg);
+  }
+
+  .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: flex-end;
+
+    @media screen and (min-width: 768px) {
+      padding: 40px;
+    }
+  }
+
+  &__title {
+    width: 295px;
+    color: $white;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: -0.03em;
+    text-align: start;
+    margin-bottom: 32px;
+
+    @media screen and (min-width: 768px) {
+      width: 484px;
+      font-size: 28px;
+    }
+  }
+
+  &__btns {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .btns__list {
+      display: flex;
+      gap: 14px;
+
+      @media screen and (min-width: 768px) {
+        gap: 12px;
+      }
+    }
+  }
+}

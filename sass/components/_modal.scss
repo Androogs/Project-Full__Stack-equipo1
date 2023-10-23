@@ -1,0 +1,254 @@
+/*Modal*/
+.location-modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  background-color: $white;
+  width: 311px;
+  border-radius: 15px;
+  @media screen and (min-width: 768px) {
+    width: 517px;
+  }
+}
+
+.backdrop {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $black-o10;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity $time-animation $cubic-bezier-animation;
+}
+
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+.modal__header {
+  position: relative;
+}
+.svg-close-modal {
+  width: 24px;
+  height: 24px;
+  fill: $black;
+  @media screen and (min-width: 768px) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.modal__title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  &--buy {
+    text-align: center;
+  }
+  padding-bottom: 32px;
+  @media screen and (min-width: 768px) {
+    text-align: left;
+    position: relative;
+    &--review {
+      right: 80px;
+      width: 298px;
+    }
+    &--subs {
+      width: 298px;
+    }
+  }
+}
+.modal__main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-left: 24px;
+  padding-right: 32px;
+  padding-top: 32px;
+  &--subs {
+    padding: 32px 24px;
+  }
+}
+.main__title {
+  color: $accent;
+}
+
+.review {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  padding-bottom: 18px;
+  width: 85%;
+  border: 0;
+  @media screen and (min-width: 768px) {
+    width: 82%;
+  }
+}
+.review-form {
+  display: flex;
+  justify-content: center;
+  &__input {
+    width: 269px;
+    border: 1.5px solid $black-o10;
+    padding: 14px 18px;
+    border-radius: 8px;
+  }
+  &__svg {
+    width: 24px;
+    height: 24px;
+  }
+  @media screen and (min-width: 768px) {
+    &__input {
+      width: 437px;
+      padding: 22px 24px;
+      border-radius: 13px;
+    }
+    &__input-buy {
+      width: 513px;
+    }
+  }
+}
+.review__label-phone {
+  position: relative;
+}
+.input--phone {
+  padding-right: 18px;
+  padding-left: 105px;
+  @media screen and (min-width: 768px) {
+    width: 437px;
+    &-buy {
+      width: 513px;
+    }
+  }
+}
+.phone__svg-id {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  top: 13px;
+  left: 15px;
+  &::after {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: 1px;
+    height: 100%;
+    left: 82px;
+    background-color: $black-o10;
+  }
+  @media screen and (min-width: 768px) {
+    top: 21px;
+  }
+}
+.header__image {
+  width: 100%;
+  border-radius: 15px 15px 0px 0px;
+}
+.input--textarea {
+  resize: none;
+}
+.subscribe {
+  position: relative;
+  border: 0;
+  @media screen and (min-width: 768px) {
+    position: static;
+    display: flex;
+    gap: 28px;
+  }
+}
+.subscribe__email {
+  border-radius: 25px;
+  @media screen and (min-width: 768px) {
+    width: 313px;
+  }
+}
+
+.buy-modal {
+  @media screen and (min-width: 768px) {
+    width: 610px;
+  }
+}
+.buy-form {
+  display: flex;
+  justify-content: center;
+}
+.buy-form__label {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.3;
+  letter-spacing: -0.28px;
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
+}
+.list-products {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding-bottom: 32px;
+}
+.product-card {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid $black-o10;
+  border-radius: 15px;
+  width: 263px;
+  &__image {
+    width: 84px;
+    height: 69px;
+  }
+  &__qty {
+    border: 1px solid $black-o10;
+    border-radius: 100px;
+    padding: 6px 16px;
+  }
+  @media screen and (min-width: 768px) {
+    flex-wrap: wrap;
+    width: 160px;
+    padding: 24px 20px 18px 20px;
+  }
+}
+.card-logo {
+  position: absolute;
+  left: 215px;
+  @media screen and (min-width: 768px) {
+    left: 465px;
+  }
+}
+.svg--buy {
+  top: 45px;
+  @media screen and (min-width: 768px) {
+    top: 53px;
+  }
+}
+.personal-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  @media screen and (min-width: 768px) {
+    gap: 21px;
+  }
+}
+.input-name,
+.input-surname {
+  @media screen and (min-width: 768px) {
+    width: 246px;
+  }
+}
