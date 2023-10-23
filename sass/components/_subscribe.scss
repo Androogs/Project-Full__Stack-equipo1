@@ -1,5 +1,4 @@
 .hero__background {
-  background-image: linear-gradient(to bottom, #2f303a66, #2f303a66), url(images/footer.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -7,6 +6,7 @@
 }
 
 .center {
+  background-image: url(../images/images/footer.jpg);
   text-align: center;
   color: #ffffff;
   white-space: pre-line;
