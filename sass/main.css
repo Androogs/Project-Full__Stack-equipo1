@@ -998,6 +998,7 @@ img {
   width: 560px;
   color: #ffffff;
   margin: 35px;
+  line-height: 25px;
 }
 
 .btn__dimention {
@@ -1102,6 +1103,7 @@ img {
 
 .svg__instagram:hover {
   fill: #fd9222;
+  filter: drop-shadow(0 0 5px #fd9222);
 }
 
 .svg__twitter {
@@ -1113,4 +1115,5 @@ img {
 
 .svg__twitter:hover {
   fill: #fd9222;
+  filter: drop-shadow(0 0 5px #fd9222);
 }/*# sourceMappingURL=main.css.map */
