@@ -97,8 +97,10 @@
   }
 }
 .review-form {
-  width: 263px;
+  display: flex;
+  justify-content: center;
   &__input {
+    width: 269px;
     border: 1.5px solid $black-o10;
     padding: 14px 18px;
     border-radius: 8px;
@@ -124,7 +126,6 @@
 .input--phone {
   padding-right: 18px;
   padding-left: 105px;
-  width: 269px;
   @media screen and (min-width: 768px) {
     width: 437px;
     &-buy {
@@ -137,7 +138,7 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  top: 15px;
+  top: 13px;
   left: 15px;
   &::after {
     content: '';
@@ -149,7 +150,7 @@
     background-color: $black-o10;
   }
   @media screen and (min-width: 768px) {
-    top: 22px;
+    top: 21px;
   }
 }
 .header__image {
@@ -176,9 +177,22 @@
 }
 
 .buy-modal {
-  overflow-y: scroll;
   @media screen and (min-width: 768px) {
     width: 610px;
+  }
+}
+.buy-form {
+  display: flex;
+  justify-content: center;
+}
+.buy-form__label {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.3;
+  letter-spacing: -0.28px;
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
   }
 }
 .list-products {
@@ -219,9 +233,9 @@
   }
 }
 .svg--buy {
-  top: 30px;
+  top: 45px;
   @media screen and (min-width: 768px) {
-    top: 40px;
+    top: 53px;
   }
 }
 .personal-info {
@@ -234,7 +248,6 @@
 }
 .input-name,
 .input-surname {
-  width: 269px;
   @media screen and (min-width: 768px) {
     width: 246px;
   }

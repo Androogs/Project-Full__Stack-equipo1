@@ -10,6 +10,11 @@
   display: flex;
   overflow-x: scroll;
   gap: 20px;
+  &::-webkit-scrollbar {
+    width: 20px;
+    background-color: $white;
+    display: none;
+  }
 }
 .products__item {
   display: flex;
