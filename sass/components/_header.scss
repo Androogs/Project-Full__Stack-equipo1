@@ -122,9 +122,17 @@
     line-height: 1.14;
     letter-spacing: -0.02em;
   }
-  .social__link {
-    fill: $bg-main;
-    stroke: $black;
+  .social__list {
+    .social__link {
+      fill: $bg-main;
+      stroke: $black;
+      &:hover,
+      &:focus,
+      &:focus-visible,
+      &:focus-within {
+        stroke: $accent;
+      }
+    }
   }
 }
 
