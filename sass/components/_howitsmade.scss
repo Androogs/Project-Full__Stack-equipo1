@@ -34,7 +34,7 @@
     text-transform: uppercase;
   }
   &__t2 {
-    color: #fd9222;
+    color: $accent;
     font-family: Montserrat;
     font-size: 24px;
     font-style: normal;
@@ -60,56 +60,48 @@
     background: transparent;
     border-radius: 50px;
   }
-}
-&__imagen {
-  max-width: 600px;
-  height: 400px;
-  border-radius: 15px;
-  position: relative;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%),
-    url(<path-to-image>), lightgray -10.819px -343.839px / 103.473% 236.295% no-repeat;
-  /* @media screen and (min-width: 768px) {
-    width: 614px;
-    flex-wrap: wrap;*/
-}
-
-.made__blocks {
-  display: flex;
-  width: 516px;
-  height: 400px;
-  padding: 32px;
-  justify-content: center;
-  align-items: center;
-  flex-shrink: 0;
-  border-radius: 15px;
-  background: #fff;
-  gap: 20px;
-}
-.made__text {
-  display: flex;
-  width: 452px;
-  height: 336px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 28px;
-  flex-shrink: 0;
-}
-.made__preparation {
-  display: flex;
-  width: 452px;
-  height: 260px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 24px;
-  flex-shrink: 0;
-}
-.made__numeral1 {
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  gap: 10px;
-}
-.box-text {
-  display: flex;
-  gap: 8px;
+  &__imagen {
+    max-width: 600px;
+    height: 400px;
+    border-radius: 15px;
+    position: relative;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%),
+      url(<path-to-image>), lightgray -10.819px -343.839px / 103.473% 236.295% no-repeat;
+  }
+  &__blocks {
+    display: flex;
+    width: 516px;
+    height: 400px;
+    padding: 32px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: #fff;
+    gap: 20px;
+  }
+  &__text {
+    display: flex;
+    width: 452px;
+    height: 336px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 28px;
+    flex-shrink: 0;
+  }
+  &__preparation {
+    display: flex;
+    width: 452px;
+    height: 260px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    flex-shrink: 0;
+  }
+  &__numeral1 {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 10px;
+  }
 }
