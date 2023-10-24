@@ -10,8 +10,7 @@
   gap: 4px;
 
   &--normal {
-    color: #111;
-    font-family: Montserrat;
+    color: $black;
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
@@ -55,7 +54,7 @@
 }
 .mobile-networks__links {
   fill: transparent;
-  stroke: #ffffff;
+  stroke: $white;
   &:hover {
     stroke: $accent;
   }
@@ -170,7 +169,7 @@
     display: none;
   }
   .menu-toggle {
-    color: #fff;
+    color: $white;
     position: absolute;
     right: 15px;
     top: 15px;
@@ -208,10 +207,9 @@
     position: absolute;
     display: block;
     padding: 10px;
-    color: #fff;
+    color: $white;
     text-decoration: none;
-    color: #fff;
-    font-family: Montserrat;
+    color: $white;
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
