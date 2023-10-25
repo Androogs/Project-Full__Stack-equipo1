@@ -1,107 +1,156 @@
 .footer {
-  background-color: #1e1823;
-  color: #ffffff;
-  height: 240px;
-}
+  &__hero {
+    background-color: #1e1823;
+    color: #ffffff;
+    height: 270px;
 
-.footer__text {
-  font-size: 28px;
-  white-space: pre-line;
-  border-bottom: 1px solid #ffffff1a;
-}
+    @media screen and (max-width: 378px) {
+      height: 440px;
+    }
+  }
 
-.first__letter {
-  color: #fd9222;
-}
+  &__title {
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff1a;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 34px;
+    letter-spacing: -0.56px;
+    font-size: 28px;
+    white-space: pre-line;
+    text-align: left;
 
-.chocolate_phrase {
-  margin-left: 10px;
-}
+    @media screen and (max-width: 378px) {
+      font-size: 24px;
+      line-height: 28px;
+      letter-spacing: -0.48px;
+    }
+  }
 
-.contact__space {
-  margin-bottom: 10px;
-  margin-right: 210px;
-}
+  &__phrase {
+    margin-left: 32px;
+    padding-top: 5px;
+    padding-bottom: 20px;
 
-.link__first {
-  text-decoration: none;
-  color: #ffffff;
-  margin-right: 147px;
-}
+    @media screen and (max-width: 378px) {
+      margin-left: 20px;
+      margin-bottom: 100px;
+    }
+  }
 
-.link__second {
-  text-decoration: none;
-  color: #ffffff;
-  margin-right: 100px;
-}
+  &__word {
+    color: #fd9222;
+  }
 
-.link__block {
-  transform: translateY(80%);
-}
+  &__contact-space {
+    margin-bottom: 30px;
+    margin-right: 200px;
+    margin-top: 70px;
+    text-align: right;
 
-.link__first:hover {
-  color: #fd9222;
-}
+    @media screen and (max-width: 378px) {
+      font-size: 14px;
+      justify-content: space-between;
+    }
+  }
 
-.link__second:hover {
-  color: #fd9222;
-}
+  &__contact-dimention {
+    text-align: right;
+    margin-top: -190px;
+  }
 
-.contact__dimention {
-  text-align: right;
-  transform: translateY(-140%);
-}
+  &__contact-block {
+    white-space: pre-line;
+    display: block;
+    margin-top: -25px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 4px;
 
-.contact__space {
-  margin-bottom: 30px;
-  margin-right: 210px;
-  transform: translateY(310%);
-}
+    @media screen and (max-width: 378px) {
+      font-size: 14px;
+    }
+  }
 
-.contact__svg {
-  display: flex;
-  justify-content: right;
-}
+  &__first-link {
+    text-decoration: none;
+    color: $white;
+    margin-right: 140px;
+    margin-top: 20px;
 
-.first__part {
-  text-align: right;
-  transform: translateY(-150%);
-}
+    @media screen and (max-width: 378px) {
+      font-size: 14px;
+    }
+  }
 
-.menu {
-  padding-left: 30px;
-  transform: translateY(-480%);
-}
+  &__second-link {
+    text-decoration: none;
+    color: $white;
+    margin-right: 90px;
+  }
 
-.menu__link {
-  text-decoration: none;
-  color: #ffffff;
-  display: inline;
-  padding: 12px;
-  cursor: pointer;
-}
+  &__first-link:hover {
+    color: #fd9222;
+  }
 
-.menu__link:hover {
-  color: #fd9222;
-}
+  &__second-link:hover {
+    color: #fd9222;
+  }
 
-.svg__instagram {
-  fill: #ffffff;
-  cursor: pointer;
-  display: inline;
-}
+  &__menu {
+    padding-left: 50px;
+    text-align: left;
+    margin-top: 60px;
+  }
 
-.svg__instagram:hover {
-  fill: #fd9222;
-}
+  &__menu-link {
+    text-decoration: none;
+    color: #ffffff;
+    display: inline;
+    padding: 12px;
+    cursor: pointer;
 
-.svg__twitter {
-  fill: #ffffff;
-  cursor: pointer;
-  display: inline;
-  margin-left: 15px;
-}
+    @media screen and (max-width: 378px) {
+      display: block;
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: -0.28px;
+      padding: 5px;
+      padding-left: 0;
+    }
+  }
 
-.svg__twitter:hover {
-  fill: #fd9222;
+  &__menu-link:hover {
+    color: #fd9222;
+  }
+
+  &__svg {
+    display: flex;
+    justify-content: right;
+  }
+
+  &__instagram {
+    fill: #ffffff;
+    cursor: pointer;
+    display: inline;
+    margin-top: -50px;
+  }
+
+  &__instagram:hover {
+    fill: #fd9222;
+  }
+
+  &__twitter {
+    fill: #ffffff;
+    cursor: pointer;
+    display: inline;
+    margin-left: 15px;
+    margin-top: -50px;
+  }
+
+  &__twitter:hover {
+    fill: #fd9222;
+  }
 }

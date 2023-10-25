@@ -1,55 +1,57 @@
-.hero__background {
-  background-image: linear-gradient(to bottom, #2f303a66, #2f303a66), url(images/footer.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  top: 4414px;
-}
+.subscribe {
+  &__hero {
+    width: 100%;
+    background-image: url(../images/footer.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 63px 0;
 
+    @media screen and (min-width: 768px) {
+      padding: 72px 0;
+    }
+  }
+  &__title {
+    width: 291px;
+    color: $white;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+
+    @media screen and (min-width: 768px) {
+      width: 378px;
+      font-size: 24px;
+      line-height: 1.17;
+    }
+  }
+  &__text {
+    width: 326px;
+    color: $white;
+    margin: 24px 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.28;
+    letter-spacing: -0.02em;
+
+    @media screen and (min-width: 768px) {
+      width: 467px;
+    }
+  }
+  &__btn {
+    font-size: 14px;
+    font-weight: 600;
+
+    @media screen and (min-width: 768px) {
+      font-size: 18px;
+    }
+  }
+}
 .center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  color: #ffffff;
-  white-space: pre-line;
-}
-
-.title__dimention {
-  transform: translateY(60%);
-}
-
-.text__dimention {
-  text-align: center;
-  margin-bottom: 5px;
-  transform: translateY(30%);
-}
-
-.btn__dimention {
-  margin: 25px 40px 14px 40px;
-}
-
-.hero__background {
-  background-image: linear-gradient(to bottom, #2f303a66, #2f303a66), url(images/footer.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  top: 4414px;
-}
-
-.center {
-  text-align: center;
-  color: #ffffff;
-  white-space: pre-line;
-}
-
-.title__dimention {
-  transform: translateY(60%);
-}
-
-.text__dimention {
-  text-align: center;
-  margin-bottom: 5px;
-  transform: translateY(30%);
-}
-
-.btn__dimention {
-  margin: 25px 40px 14px 40px;
 }
